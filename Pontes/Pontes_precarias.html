@@ -1,0 +1,3677 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b9eecfda392bc46ff8d369a925f698e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b9eecfda392bc46ff8d369a925f698e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b9eecfda392bc46ff8d369a925f698e = L.map(
+                "map_6b9eecfda392bc46ff8d369a925f698e",
+                {
+                    center: [-15.0, -55.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7900f32a905e43a1f9749b270d42eb40 = L.tileLayer(
+                "http://{s}.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "google", "detectRetina": false, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            );
+        
+    
+            tile_layer_7900f32a905e43a1f9749b270d42eb40.addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var tile_layer_3ef78893c58c56cdff0a12079f8a5e8b = L.tileLayer(
+                "http://{s}.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "google", "detectRetina": false, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            );
+        
+    
+            tile_layer_3ef78893c58c56cdff0a12079f8a5e8b.addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var marker_7f0f9e95b1cfc374b8b65b455428781e = L.marker(
+                [-9.116866666666667, -54.91428333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_927b863aece9b8b721f8829bf0755bd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7f0f9e95b1cfc374b8b65b455428781e.setIcon(icon_927b863aece9b8b721f8829bf0755bd3);
+        
+    
+        var popup_1d9766bc89a462a65d06d5d4b1a3c32a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adedbe9f4e286b47067f5d6e3e1d2770 = $(`<div id="html_adedbe9f4e286b47067f5d6e3e1d2770" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte Sobre o Rio Cristalino</p><p>Rodovia: BR-163/PA km 55</p></div></div>`)[0];
+                popup_1d9766bc89a462a65d06d5d4b1a3c32a.setContent(html_adedbe9f4e286b47067f5d6e3e1d2770);
+            
+        
+
+        marker_7f0f9e95b1cfc374b8b65b455428781e.bindPopup(popup_1d9766bc89a462a65d06d5d4b1a3c32a)
+        ;
+
+        
+    
+    
+            marker_7f0f9e95b1cfc374b8b65b455428781e.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7daf3b7bd5fa984de8f2e862cb965be5 = L.marker(
+                [-7.048883333333333, -55.411183333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_9e75caebffff153a2aeb1071efc344da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7daf3b7bd5fa984de8f2e862cb965be5.setIcon(icon_9e75caebffff153a2aeb1071efc344da);
+        
+    
+        var popup_84fd2dd49b05bfc1da0c2744c1e0adff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5169799e791794e108075fa1d63bb2b8 = $(`<div id="html_5169799e791794e108075fa1d63bb2b8" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Córrego dos Bueiros</p><p>Rodovia: BR-163/PA km 310,98</p></div></div>`)[0];
+                popup_84fd2dd49b05bfc1da0c2744c1e0adff.setContent(html_5169799e791794e108075fa1d63bb2b8);
+            
+        
+
+        marker_7daf3b7bd5fa984de8f2e862cb965be5.bindPopup(popup_84fd2dd49b05bfc1da0c2744c1e0adff)
+        ;
+
+        
+    
+    
+            marker_7daf3b7bd5fa984de8f2e862cb965be5.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8d24737902c77aaedd61debbc94d8f3 = L.marker(
+                [-5.77355, -55.7408],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_80e2160626e014ad0c79c08aab30be77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c8d24737902c77aaedd61debbc94d8f3.setIcon(icon_80e2160626e014ad0c79c08aab30be77);
+        
+    
+        var popup_b9a7e748d8517aca8d99e71669a22d47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb5ea11e51f0ddff1e114e7dc8160755 = $(`<div id="html_fb5ea11e51f0ddff1e114e7dc8160755" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Igarapé Estrela I</p><p>Rodovia: BR-163/PA km 466,6</p></div></div>`)[0];
+                popup_b9a7e748d8517aca8d99e71669a22d47.setContent(html_fb5ea11e51f0ddff1e114e7dc8160755);
+            
+        
+
+        marker_c8d24737902c77aaedd61debbc94d8f3.bindPopup(popup_b9a7e748d8517aca8d99e71669a22d47)
+        ;
+
+        
+    
+    
+            marker_c8d24737902c77aaedd61debbc94d8f3.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15a03ef5a5c710913644590463844423 = L.marker(
+                [-6.332283333333334, -55.58331666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_8149ce7f0652305925de285610a7a78b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_15a03ef5a5c710913644590463844423.setIcon(icon_8149ce7f0652305925de285610a7a78b);
+        
+    
+        var popup_e237cd6193c524ed4a0f90837f81eab2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc1a25e5594e7b6a6e5c1ecc970eaee5 = $(`<div id="html_cc1a25e5594e7b6a6e5c1ecc970eaee5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre Rio Onça I</p><p>Rodovia: BR-163/PA km 395,89</p></div></div>`)[0];
+                popup_e237cd6193c524ed4a0f90837f81eab2.setContent(html_cc1a25e5594e7b6a6e5c1ecc970eaee5);
+            
+        
+
+        marker_15a03ef5a5c710913644590463844423.bindPopup(popup_e237cd6193c524ed4a0f90837f81eab2)
+        ;
+
+        
+    
+    
+            marker_15a03ef5a5c710913644590463844423.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_435b11f76d4f7b7526e904350836f258 = L.marker(
+                [-5.934316666666667, -55.711083333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_33eb16dc36a0340dce46f7b992725b63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_435b11f76d4f7b7526e904350836f258.setIcon(icon_33eb16dc36a0340dce46f7b992725b63);
+        
+    
+        var popup_18d4add2ef45b67b9b1a811d4ca10657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9a40fc348bad0e8d90909c391f8c9e5 = $(`<div id="html_d9a40fc348bad0e8d90909c391f8c9e5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Igarapé Cazuo</p><p>Rodovia: BR-163/PA km 448,11</p></div></div>`)[0];
+                popup_18d4add2ef45b67b9b1a811d4ca10657.setContent(html_d9a40fc348bad0e8d90909c391f8c9e5);
+            
+        
+
+        marker_435b11f76d4f7b7526e904350836f258.bindPopup(popup_18d4add2ef45b67b9b1a811d4ca10657)
+        ;
+
+        
+    
+    
+            marker_435b11f76d4f7b7526e904350836f258.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6382c8357991408c6a4342ac43d00d9a = L.marker(
+                [-4.29875, -49.948766666666664],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_bcbc3f59d8132791e73f78772d8d923b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6382c8357991408c6a4342ac43d00d9a.setIcon(icon_bcbc3f59d8132791e73f78772d8d923b);
+        
+    
+        var popup_1059c8e40161dd1f19594f963f34e5ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6230322125f6169d2cc76ea69eed9b10 = $(`<div id="html_6230322125f6169d2cc76ea69eed9b10" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Repartimento</p><p>Rodovia: BR-230/PA km 302,87</p></div></div>`)[0];
+                popup_1059c8e40161dd1f19594f963f34e5ba.setContent(html_6230322125f6169d2cc76ea69eed9b10);
+            
+        
+
+        marker_6382c8357991408c6a4342ac43d00d9a.bindPopup(popup_1059c8e40161dd1f19594f963f34e5ba)
+        ;
+
+        
+    
+    
+            marker_6382c8357991408c6a4342ac43d00d9a.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f6392aa2b1e3620fda34e9a2b812dc4 = L.marker(
+                [-3.7289166666666667, -38.77153333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_60eb51759d6a8d5b9637b119a604e249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f6392aa2b1e3620fda34e9a2b812dc4.setIcon(icon_60eb51759d6a8d5b9637b119a604e249);
+        
+    
+        var popup_11eb99a59829b371a21bca1e4d32389c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06b181bb4a9c57aae4e332fe48fc0a97 = $(`<div id="html_06b181bb4a9c57aae4e332fe48fc0a97" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto sobre RFFSA (LE)</p><p>Rodovia: BR-222/CE km 24,14</p></div></div>`)[0];
+                popup_11eb99a59829b371a21bca1e4d32389c.setContent(html_06b181bb4a9c57aae4e332fe48fc0a97);
+            
+        
+
+        marker_8f6392aa2b1e3620fda34e9a2b812dc4.bindPopup(popup_11eb99a59829b371a21bca1e4d32389c)
+        ;
+
+        
+    
+    
+            marker_8f6392aa2b1e3620fda34e9a2b812dc4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e95837437f19fc5350df8aefb8967084 = L.marker(
+                [-7.985266666666667, -38.2724],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_a3ba86e052587d309a962919783be659 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e95837437f19fc5350df8aefb8967084.setIcon(icon_a3ba86e052587d309a962919783be659);
+        
+    
+        var popup_351a3ef5c8a2cec443fd977e93671f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef51054698711e23a9b2dc517244d06a = $(`<div id="html_ef51054698711e23a9b2dc517244d06a" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Açude Quitandinha</p><p>Rodovia: BR-232/PE km 407,1</p></div></div>`)[0];
+                popup_351a3ef5c8a2cec443fd977e93671f44.setContent(html_ef51054698711e23a9b2dc517244d06a);
+            
+        
+
+        marker_e95837437f19fc5350df8aefb8967084.bindPopup(popup_351a3ef5c8a2cec443fd977e93671f44)
+        ;
+
+        
+    
+    
+            marker_e95837437f19fc5350df8aefb8967084.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5528d9d1b2e4923316d6f2bc0c5e2201 = L.marker(
+                [-8.070783333333333, -34.991566666666664],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_53feab0ac86e9d804727122d1d9a915e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5528d9d1b2e4923316d6f2bc0c5e2201.setIcon(icon_53feab0ac86e9d804727122d1d9a915e);
+        
+    
+        var popup_332c7c4b7b5010b95312c5f3db73aaf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c1e1ceda830e5914e35ef725e013093 = $(`<div id="html_5c1e1ceda830e5914e35ef725e013093" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 104,74</p><p>Rodovia: BR-408/PE km 104,74</p></div></div>`)[0];
+                popup_332c7c4b7b5010b95312c5f3db73aaf9.setContent(html_5c1e1ceda830e5914e35ef725e013093);
+            
+        
+
+        marker_5528d9d1b2e4923316d6f2bc0c5e2201.bindPopup(popup_332c7c4b7b5010b95312c5f3db73aaf9)
+        ;
+
+        
+    
+    
+            marker_5528d9d1b2e4923316d6f2bc0c5e2201.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b852d3cfc8307910a82aee87ed4769f = L.marker(
+                [-8.0798, -34.990316666666665],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_aac845747697b42b139330225d55f906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6b852d3cfc8307910a82aee87ed4769f.setIcon(icon_aac845747697b42b139330225d55f906);
+        
+    
+        var popup_98278fd5c63a5a52be0550ede0ac068f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c27dd73dae6690d11ab68e2e818e50d2 = $(`<div id="html_c27dd73dae6690d11ab68e2e818e50d2" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto BR-232 sobre BR-408 (LE)</p><p>Rodovia: BR-408/PE km 104,21</p></div></div>`)[0];
+                popup_98278fd5c63a5a52be0550ede0ac068f.setContent(html_c27dd73dae6690d11ab68e2e818e50d2);
+            
+        
+
+        marker_6b852d3cfc8307910a82aee87ed4769f.bindPopup(popup_98278fd5c63a5a52be0550ede0ac068f)
+        ;
+
+        
+    
+    
+            marker_6b852d3cfc8307910a82aee87ed4769f.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9ad0f4f142b1bf32c168a960a873e4e = L.marker(
+                [-21.656833333333335, -42.72095],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_2c217a4d8d73f9d37e7e2099cbba1475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b9ad0f4f142b1bf32c168a960a873e4e.setIcon(icon_2c217a4d8d73f9d37e7e2099cbba1475);
+        
+    
+        var popup_bb81dde08a38412a1c38af254fd0c6a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd21968b0fa6b93020de5977a1d3f8d = $(`<div id="html_bdd21968b0fa6b93020de5977a1d3f8d" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Pontilhão sobre o Córrego Santa Tereza</p><p>Rodovia: BR-116/MG km 788,93</p></div></div>`)[0];
+                popup_bb81dde08a38412a1c38af254fd0c6a0.setContent(html_bdd21968b0fa6b93020de5977a1d3f8d);
+            
+        
+
+        marker_b9ad0f4f142b1bf32c168a960a873e4e.bindPopup(popup_bb81dde08a38412a1c38af254fd0c6a0)
+        ;
+
+        
+    
+    
+            marker_b9ad0f4f142b1bf32c168a960a873e4e.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_604ae019c795c71f4cc7e94db2bd4ca4 = L.marker(
+                [-18.601216666666666, -49.19226666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_fff5a772b38718092c5dfc006a7fd9b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_604ae019c795c71f4cc7e94db2bd4ca4.setIcon(icon_fff5a772b38718092c5dfc006a7fd9b5);
+        
+    
+        var popup_f67222af589305e5c806d1c81d696d5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6e3325962a7fff774225833b9ac5804 = $(`<div id="html_e6e3325962a7fff774225833b9ac5804" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Canapolis (LE)</p><p>Rodovia: BR-153/MG km 20,6</p></div></div>`)[0];
+                popup_f67222af589305e5c806d1c81d696d5c.setContent(html_e6e3325962a7fff774225833b9ac5804);
+            
+        
+
+        marker_604ae019c795c71f4cc7e94db2bd4ca4.bindPopup(popup_f67222af589305e5c806d1c81d696d5c)
+        ;
+
+        
+    
+    
+            marker_604ae019c795c71f4cc7e94db2bd4ca4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e1cc802939e1dfd413cab99f974c775 = L.marker(
+                [-15.2716, -44.23283333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_a3a5a284b3b4b5d2c8910792f6bfa9fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6e1cc802939e1dfd413cab99f974c775.setIcon(icon_a3a5a284b3b4b5d2c8910792f6bfa9fc);
+        
+    
+        var popup_b32f084c4bcaaa1d5e8068ea8e68fddf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f9645a0e0a84bbab2e5d365a1fe6dfa = $(`<div id="html_7f9645a0e0a84bbab2e5d365a1fe6dfa" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte km 164,30</p><p>Rodovia: BR-135/MG km 164,3</p></div></div>`)[0];
+                popup_b32f084c4bcaaa1d5e8068ea8e68fddf.setContent(html_7f9645a0e0a84bbab2e5d365a1fe6dfa);
+            
+        
+
+        marker_6e1cc802939e1dfd413cab99f974c775.bindPopup(popup_b32f084c4bcaaa1d5e8068ea8e68fddf)
+        ;
+
+        
+    
+    
+            marker_6e1cc802939e1dfd413cab99f974c775.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_199b7e9d9a617ad51fe7aeb5dceeb1ca = L.marker(
+                [-16.488333333333333, -43.972],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_2a1ff33a3efac5fd0ba2ccb80d0c4da7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_199b7e9d9a617ad51fe7aeb5dceeb1ca.setIcon(icon_2a1ff33a3efac5fd0ba2ccb80d0c4da7);
+        
+    
+        var popup_ecdf45b42231ff82489b258487d884f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10fd08b0c83e476e290b264dbb6153a3 = $(`<div id="html_10fd08b0c83e476e290b264dbb6153a3" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Pontilhão km 331,40</p><p>Rodovia: BR-135/MG km 331,4</p></div></div>`)[0];
+                popup_ecdf45b42231ff82489b258487d884f1.setContent(html_10fd08b0c83e476e290b264dbb6153a3);
+            
+        
+
+        marker_199b7e9d9a617ad51fe7aeb5dceeb1ca.bindPopup(popup_ecdf45b42231ff82489b258487d884f1)
+        ;
+
+        
+    
+    
+            marker_199b7e9d9a617ad51fe7aeb5dceeb1ca.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0d262cf936a524052aaad546b3329d0 = L.marker(
+                [-16.502716666666668, -43.96756666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_8db1f5bad8e9cbf406bc482c840fb75c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e0d262cf936a524052aaad546b3329d0.setIcon(icon_8db1f5bad8e9cbf406bc482c840fb75c);
+        
+    
+        var popup_bf1d072e4c44ecf26ed71f690351439e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaad198b793293ae28a87b7ba2e4b069 = $(`<div id="html_aaad198b793293ae28a87b7ba2e4b069" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Pontilhão km 333,10</p><p>Rodovia: BR-135/MG km 333,1</p></div></div>`)[0];
+                popup_bf1d072e4c44ecf26ed71f690351439e.setContent(html_aaad198b793293ae28a87b7ba2e4b069);
+            
+        
+
+        marker_e0d262cf936a524052aaad546b3329d0.bindPopup(popup_bf1d072e4c44ecf26ed71f690351439e)
+        ;
+
+        
+    
+    
+            marker_e0d262cf936a524052aaad546b3329d0.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e52a1f69ff1d8c658f82a41f6dc08cc3 = L.marker(
+                [-18.601216666666666, -49.1923],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_7172b5b95cca4c8b8cc0f6a10f8ab169 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e52a1f69ff1d8c658f82a41f6dc08cc3.setIcon(icon_7172b5b95cca4c8b8cc0f6a10f8ab169);
+        
+    
+        var popup_78be1a91b5525c6c9856789cb3157578 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5deaa3c2e3a4ad766964eeebf99b3007 = $(`<div id="html_5deaa3c2e3a4ad766964eeebf99b3007" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Canápolis (LD)</p><p>Rodovia: BR-153/MG km 20,6</p></div></div>`)[0];
+                popup_78be1a91b5525c6c9856789cb3157578.setContent(html_5deaa3c2e3a4ad766964eeebf99b3007);
+            
+        
+
+        marker_e52a1f69ff1d8c658f82a41f6dc08cc3.bindPopup(popup_78be1a91b5525c6c9856789cb3157578)
+        ;
+
+        
+    
+    
+            marker_e52a1f69ff1d8c658f82a41f6dc08cc3.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfcc588dd0167304f190d414b49d5cbe = L.marker(
+                [-19.7665, -47.9902],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_f899342f2288751038ae96608616d8a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cfcc588dd0167304f190d414b49d5cbe.setIcon(icon_f899342f2288751038ae96608616d8a3);
+        
+    
+        var popup_05b40e057e2f81d121b7abd6355bade8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2fb866ad3644ad5b08ac6995f82ad25 = $(`<div id="html_b2fb866ad3644ad5b08ac6995f82ad25" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Wilson Franco (LD)</p><p>Rodovia: BR-262/MG km 812</p></div></div>`)[0];
+                popup_05b40e057e2f81d121b7abd6355bade8.setContent(html_b2fb866ad3644ad5b08ac6995f82ad25);
+            
+        
+
+        marker_cfcc588dd0167304f190d414b49d5cbe.bindPopup(popup_05b40e057e2f81d121b7abd6355bade8)
+        ;
+
+        
+    
+    
+            marker_cfcc588dd0167304f190d414b49d5cbe.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f220ab7d6e0104282cbbea4117672dc = L.marker(
+                [-19.766633333333335, -47.99021666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_d5447b6adf951b5964a7215db0de9fc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2f220ab7d6e0104282cbbea4117672dc.setIcon(icon_d5447b6adf951b5964a7215db0de9fc4);
+        
+    
+        var popup_232c73ca6e2cd3f7352fca60046ed4e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b63f7898a3dea6e13411127514ec9c3 = $(`<div id="html_9b63f7898a3dea6e13411127514ec9c3" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Wilson Franco (LE)</p><p>Rodovia: BR-262/MG km 812</p></div></div>`)[0];
+                popup_232c73ca6e2cd3f7352fca60046ed4e5.setContent(html_9b63f7898a3dea6e13411127514ec9c3);
+            
+        
+
+        marker_2f220ab7d6e0104282cbbea4117672dc.bindPopup(popup_232c73ca6e2cd3f7352fca60046ed4e5)
+        ;
+
+        
+    
+    
+            marker_2f220ab7d6e0104282cbbea4117672dc.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6511a2a91841274343f07ac3238f73bc = L.marker(
+                [-16.764266666666668, -43.84256666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_85b0a44d68f23ca154f6ae1b1343e84f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6511a2a91841274343f07ac3238f73bc.setIcon(icon_85b0a44d68f23ca154f6ae1b1343e84f);
+        
+    
+        var popup_4ae972e93fb32960fdf62c3b0593b5f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2971d3470527abc3dc7a44c984955ef3 = $(`<div id="html_2971d3470527abc3dc7a44c984955ef3" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto sobre FCA</p><p>Rodovia: BR-135/MG km 319,8</p></div></div>`)[0];
+                popup_4ae972e93fb32960fdf62c3b0593b5f2.setContent(html_2971d3470527abc3dc7a44c984955ef3);
+            
+        
+
+        marker_6511a2a91841274343f07ac3238f73bc.bindPopup(popup_4ae972e93fb32960fdf62c3b0593b5f2)
+        ;
+
+        
+    
+    
+            marker_6511a2a91841274343f07ac3238f73bc.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_557ecfaec8291475b7fb47bc2f76869d = L.marker(
+                [-19.677083333333332, -46.924166666666665],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_f2149aebd4120d358bd82da7491d1a8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_557ecfaec8291475b7fb47bc2f76869d.setIcon(icon_f2149aebd4120d358bd82da7491d1a8d);
+        
+    
+        var popup_f94ace5641fc389e37ea502031da294f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab679cb0d50066cdeba108485d4b6a13 = $(`<div id="html_ab679cb0d50066cdeba108485d4b6a13" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto sobre Estrada da CBMM</p><p>Rodovia: BR-146/MG km 163,1</p></div></div>`)[0];
+                popup_f94ace5641fc389e37ea502031da294f.setContent(html_ab679cb0d50066cdeba108485d4b6a13);
+            
+        
+
+        marker_557ecfaec8291475b7fb47bc2f76869d.bindPopup(popup_f94ace5641fc389e37ea502031da294f)
+        ;
+
+        
+    
+    
+            marker_557ecfaec8291475b7fb47bc2f76869d.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22a9299412ca105284c117250fde1e61 = L.marker(
+                [-20.921533333333333, -46.967816666666664],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_8c6e774c9b167ec50682ebaf73a29e0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_22a9299412ca105284c117250fde1e61.setIcon(icon_8c6e774c9b167ec50682ebaf73a29e0e);
+        
+    
+        var popup_5310d8f09b3dcb69e9169d53c1f69ccd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15243300c61e03c77717f9aa8d0e81ec = $(`<div id="html_15243300c61e03c77717f9aa8d0e81ec" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 2,50</p><p>Rodovia: BR-491/MG km 2,5</p></div></div>`)[0];
+                popup_5310d8f09b3dcb69e9169d53c1f69ccd.setContent(html_15243300c61e03c77717f9aa8d0e81ec);
+            
+        
+
+        marker_22a9299412ca105284c117250fde1e61.bindPopup(popup_5310d8f09b3dcb69e9169d53c1f69ccd)
+        ;
+
+        
+    
+    
+            marker_22a9299412ca105284c117250fde1e61.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b650cfc89f147505ae64804030370dd = L.marker(
+                [-20.9239, -46.978566666666666],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_0ff1e034420936cd1e14079760e87bfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b650cfc89f147505ae64804030370dd.setIcon(icon_0ff1e034420936cd1e14079760e87bfb);
+        
+    
+        var popup_916b6149132d926fcd6b0f01fcaffb3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_731c51c0e85202e2c78819aa55c5b55b = $(`<div id="html_731c51c0e85202e2c78819aa55c5b55b" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 3,80</p><p>Rodovia: BR-491/MG km 3,8</p></div></div>`)[0];
+                popup_916b6149132d926fcd6b0f01fcaffb3c.setContent(html_731c51c0e85202e2c78819aa55c5b55b);
+            
+        
+
+        marker_0b650cfc89f147505ae64804030370dd.bindPopup(popup_916b6149132d926fcd6b0f01fcaffb3c)
+        ;
+
+        
+    
+    
+            marker_0b650cfc89f147505ae64804030370dd.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e3ac0d97ff862749d473192fd8bf1d4 = L.marker(
+                [-21.573583333333332, -45.45021666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_cb70b5756f5d8ce0308a8a6521317bfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1e3ac0d97ff862749d473192fd8bf1d4.setIcon(icon_cb70b5756f5d8ce0308a8a6521317bfb);
+        
+    
+        var popup_04f48e61a90444443ec6b224df95669f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be32952f354df57314b4f2f74fd5340c = $(`<div id="html_be32952f354df57314b4f2f74fd5340c" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Retorno Nova Varginha</p><p>Rodovia: BR-491/MG km 243,1</p></div></div>`)[0];
+                popup_04f48e61a90444443ec6b224df95669f.setContent(html_be32952f354df57314b4f2f74fd5340c);
+            
+        
+
+        marker_1e3ac0d97ff862749d473192fd8bf1d4.bindPopup(popup_04f48e61a90444443ec6b224df95669f)
+        ;
+
+        
+    
+    
+            marker_1e3ac0d97ff862749d473192fd8bf1d4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0843a1dc248dedce886f90a48afba0cf = L.marker(
+                [-18.912233333333333, -48.172133333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_2dd9ec7834a780aa5cda11f8cd3c96a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0843a1dc248dedce886f90a48afba0cf.setIcon(icon_2dd9ec7834a780aa5cda11f8cd3c96a9);
+        
+    
+        var popup_be291f4a8eca82fee55889ba2a4d407a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b30f0519e7f398310ed6c484a3389a = $(`<div id="html_57b30f0519e7f398310ed6c484a3389a" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 605,46 (LE)</p><p>Rodovia: BR-365/MG km 605,46</p></div></div>`)[0];
+                popup_be291f4a8eca82fee55889ba2a4d407a.setContent(html_57b30f0519e7f398310ed6c484a3389a);
+            
+        
+
+        marker_0843a1dc248dedce886f90a48afba0cf.bindPopup(popup_be291f4a8eca82fee55889ba2a4d407a)
+        ;
+
+        
+    
+    
+            marker_0843a1dc248dedce886f90a48afba0cf.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b78d9fcfea786db437ee7cf47bd04b22 = L.marker(
+                [-18.91215, -48.172216666666664],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_a699b5d6939b7fe6ebd321fcd8640979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b78d9fcfea786db437ee7cf47bd04b22.setIcon(icon_a699b5d6939b7fe6ebd321fcd8640979);
+        
+    
+        var popup_93422c5ab8aa1a507c153db5a2bcd957 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1902965197d1a0c2bb63f4c1b77a6e2e = $(`<div id="html_1902965197d1a0c2bb63f4c1b77a6e2e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 605,47 (LD)</p><p>Rodovia: BR-365/MG km 605,47</p></div></div>`)[0];
+                popup_93422c5ab8aa1a507c153db5a2bcd957.setContent(html_1902965197d1a0c2bb63f4c1b77a6e2e);
+            
+        
+
+        marker_b78d9fcfea786db437ee7cf47bd04b22.bindPopup(popup_93422c5ab8aa1a507c153db5a2bcd957)
+        ;
+
+        
+    
+    
+            marker_b78d9fcfea786db437ee7cf47bd04b22.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8196e038a3eb58615db2ce59695613a = L.marker(
+                [-21.456866666666667, -43.558033333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_e8ee7a08845519623fec3151af621c00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d8196e038a3eb58615db2ce59695613a.setIcon(icon_e8ee7a08845519623fec3151af621c00);
+        
+    
+        var popup_1aa7ced242860e2693dead84e51fedd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb662c0ecca38b855adf44131695ae92 = $(`<div id="html_cb662c0ecca38b855adf44131695ae92" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto do Palmira</p><p>Rodovia: BR-040/MG km 750,6</p></div></div>`)[0];
+                popup_1aa7ced242860e2693dead84e51fedd2.setContent(html_cb662c0ecca38b855adf44131695ae92);
+            
+        
+
+        marker_d8196e038a3eb58615db2ce59695613a.bindPopup(popup_1aa7ced242860e2693dead84e51fedd2)
+        ;
+
+        
+    
+    
+            marker_d8196e038a3eb58615db2ce59695613a.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61b7c9727587bc496e0d920bb35caf34 = L.marker(
+                [-18.928333333333335, -48.192883333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_d8a920fe637ec733925cc2ef64cca380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_61b7c9727587bc496e0d920bb35caf34.setIcon(icon_d8a920fe637ec733925cc2ef64cca380);
+        
+    
+        var popup_211898da6ae932e526fd502ced5ea022 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e2547f4f348937df14cc967513249c9 = $(`<div id="html_2e2547f4f348937df14cc967513249c9" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 138,24 (LE)</p><p>Rodovia: BR-452/MG km 138,24</p></div></div>`)[0];
+                popup_211898da6ae932e526fd502ced5ea022.setContent(html_2e2547f4f348937df14cc967513249c9);
+            
+        
+
+        marker_61b7c9727587bc496e0d920bb35caf34.bindPopup(popup_211898da6ae932e526fd502ced5ea022)
+        ;
+
+        
+    
+    
+            marker_61b7c9727587bc496e0d920bb35caf34.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9bcc1fe0477558214eda4c03f047dfa = L.marker(
+                [-21.361216666666667, -44.40421666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4da5245dba3e758562aca1f4a8b4f782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d9bcc1fe0477558214eda4c03f047dfa.setIcon(icon_4da5245dba3e758562aca1f4a8b4f782);
+        
+    
+        var popup_88210a5a0557da54b4f38b165a9fd824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06156195371df457162cd1d98a990784 = $(`<div id="html_06156195371df457162cd1d98a990784" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Ribeirão Encel</p><p>Rodovia: BR-383/MG km 146,44</p></div></div>`)[0];
+                popup_88210a5a0557da54b4f38b165a9fd824.setContent(html_06156195371df457162cd1d98a990784);
+            
+        
+
+        marker_d9bcc1fe0477558214eda4c03f047dfa.bindPopup(popup_88210a5a0557da54b4f38b165a9fd824)
+        ;
+
+        
+    
+    
+            marker_d9bcc1fe0477558214eda4c03f047dfa.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54c5133c8d3c17c152d79174c6f146a9 = L.marker(
+                [-21.668933333333335, -44.57383333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_ceb11544d61d2cf5509ddd4d410963f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_54c5133c8d3c17c152d79174c6f146a9.setIcon(icon_ceb11544d61d2cf5509ddd4d410963f6);
+        
+    
+        var popup_ab8c9354b9b9f54368eb60351f1013bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e322b3f404e2e42a350a7d3c2776ac08 = $(`<div id="html_e322b3f404e2e42a350a7d3c2776ac08" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Ribeirão Turvo</p><p>Rodovia: BR-383/MG km 227,1</p></div></div>`)[0];
+                popup_ab8c9354b9b9f54368eb60351f1013bc.setContent(html_e322b3f404e2e42a350a7d3c2776ac08);
+            
+        
+
+        marker_54c5133c8d3c17c152d79174c6f146a9.bindPopup(popup_ab8c9354b9b9f54368eb60351f1013bc)
+        ;
+
+        
+    
+    
+            marker_54c5133c8d3c17c152d79174c6f146a9.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e236dd74b5c8bed5ffb4beefa20127a5 = L.marker(
+                [-19.4638, -42.5344],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_67db08820ae2cbb38d020e22ff3e32ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e236dd74b5c8bed5ffb4beefa20127a5.setIcon(icon_67db08820ae2cbb38d020e22ff3e32ac);
+        
+    
+        var popup_618a32c124cb4c47f0131d8eb9b2c5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ae84c4aa8cd0f22646327633da4d03b = $(`<div id="html_9ae84c4aa8cd0f22646327633da4d03b" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 248,580 (LD)</p><p>Rodovia: BR-381/MG km 248,58</p></div></div>`)[0];
+                popup_618a32c124cb4c47f0131d8eb9b2c5cd.setContent(html_9ae84c4aa8cd0f22646327633da4d03b);
+            
+        
+
+        marker_e236dd74b5c8bed5ffb4beefa20127a5.bindPopup(popup_618a32c124cb4c47f0131d8eb9b2c5cd)
+        ;
+
+        
+    
+    
+            marker_e236dd74b5c8bed5ffb4beefa20127a5.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebaa0d870f0379538800c4fac7a71d14 = L.marker(
+                [-19.464666666666666, -42.53495],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_a73676bda420bfbbb27c314f330be03e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ebaa0d870f0379538800c4fac7a71d14.setIcon(icon_a73676bda420bfbbb27c314f330be03e);
+        
+    
+        var popup_4fd4eae2c90eb32c0a80cbc638f9bd1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf7af68602c2ae5affd665db6741636f = $(`<div id="html_cf7af68602c2ae5affd665db6741636f" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 248,460 (LD)</p><p>Rodovia: BR-381/MG km 248,46</p></div></div>`)[0];
+                popup_4fd4eae2c90eb32c0a80cbc638f9bd1d.setContent(html_cf7af68602c2ae5affd665db6741636f);
+            
+        
+
+        marker_ebaa0d870f0379538800c4fac7a71d14.bindPopup(popup_4fd4eae2c90eb32c0a80cbc638f9bd1d)
+        ;
+
+        
+    
+    
+            marker_ebaa0d870f0379538800c4fac7a71d14.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9827c0a1d95755ec5fbfdf999a603032 = L.marker(
+                [-15.299333333333333, -44.25053333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_5703da2da0557bd6b804205adffc9972 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9827c0a1d95755ec5fbfdf999a603032.setIcon(icon_5703da2da0557bd6b804205adffc9972);
+        
+    
+        var popup_c79eff3a3e84bf1853e0aa95a7b7521f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d63721651a078414cf2e95a48dade47 = $(`<div id="html_2d63721651a078414cf2e95a48dade47" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Pontilhão km 168,30</p><p>Rodovia: BR-135/MG km 168,3</p></div></div>`)[0];
+                popup_c79eff3a3e84bf1853e0aa95a7b7521f.setContent(html_2d63721651a078414cf2e95a48dade47);
+            
+        
+
+        marker_9827c0a1d95755ec5fbfdf999a603032.bindPopup(popup_c79eff3a3e84bf1853e0aa95a7b7521f)
+        ;
+
+        
+    
+    
+            marker_9827c0a1d95755ec5fbfdf999a603032.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a394f84e692f3f4ab17a0d44ea1388df = L.marker(
+                [-18.4166, -49.1944],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_b8bb945d5fe5cda41cd21c6af786d86d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a394f84e692f3f4ab17a0d44ea1388df.setIcon(icon_b8bb945d5fe5cda41cd21c6af786d86d);
+        
+    
+        var popup_4e4e7d922a9f12b944b09d824b82f5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0aebf8e002a4062a20532c691e35ffa = $(`<div id="html_f0aebf8e002a4062a20532c691e35ffa" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Paranaiba (Div. GO/MG)</p><p>Rodovia: BR-153/MG km 0,1</p></div></div>`)[0];
+                popup_4e4e7d922a9f12b944b09d824b82f5cd.setContent(html_f0aebf8e002a4062a20532c691e35ffa);
+            
+        
+
+        marker_a394f84e692f3f4ab17a0d44ea1388df.bindPopup(popup_4e4e7d922a9f12b944b09d824b82f5cd)
+        ;
+
+        
+    
+    
+            marker_a394f84e692f3f4ab17a0d44ea1388df.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dfae525f00007be1ec2a217aa2e425b = L.marker(
+                [-19.7677, -47.8885],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_71d97648d9f4ccd9bbd1fc999bfd2a25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6dfae525f00007be1ec2a217aa2e425b.setIcon(icon_71d97648d9f4ccd9bbd1fc999bfd2a25);
+        
+    
+        var popup_df49bf3ab26f9aff4e9ef3736908d068 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82ad5693883d07c979fee5eea2d98792 = $(`<div id="html_82ad5693883d07c979fee5eea2d98792" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Anel Viário Romes Daher	</p><p>Rodovia: BR-262/MG km 800</p></div></div>`)[0];
+                popup_df49bf3ab26f9aff4e9ef3736908d068.setContent(html_82ad5693883d07c979fee5eea2d98792);
+            
+        
+
+        marker_6dfae525f00007be1ec2a217aa2e425b.bindPopup(popup_df49bf3ab26f9aff4e9ef3736908d068)
+        ;
+
+        
+    
+    
+            marker_6dfae525f00007be1ec2a217aa2e425b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71c7e5b25e9ee013d1c70a98eb5dc7d6 = L.marker(
+                [-22.8587, -45.233],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_59be0cc75ed66da8ced90cfa6ba4f5af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_71c7e5b25e9ee013d1c70a98eb5dc7d6.setIcon(icon_59be0cc75ed66da8ced90cfa6ba4f5af);
+        
+    
+        var popup_0d59f2ed5dbb013be9b43f92ca674617 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72e388eeb377de4b0684d988d7429b4c = $(`<div id="html_72e388eeb377de4b0684d988d7429b4c" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 1,20</p><p>Rodovia: BR-488/SP km 1,2</p></div></div>`)[0];
+                popup_0d59f2ed5dbb013be9b43f92ca674617.setContent(html_72e388eeb377de4b0684d988d7429b4c);
+            
+        
+
+        marker_71c7e5b25e9ee013d1c70a98eb5dc7d6.bindPopup(popup_0d59f2ed5dbb013be9b43f92ca674617)
+        ;
+
+        
+    
+    
+            marker_71c7e5b25e9ee013d1c70a98eb5dc7d6.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aeef32820ab86d9f8e43060f4361b00d = L.marker(
+                [-25.60385, -53.5623],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_ab59c433bdd5e66586258a59047b82af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_aeef32820ab86d9f8e43060f4361b00d.setIcon(icon_ab59c433bdd5e66586258a59047b82af);
+        
+    
+        var popup_738b1058044e12c1e075916be794cf34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d13b8fb5c9ac0c13828b72f402d7e70c = $(`<div id="html_d13b8fb5c9ac0c13828b72f402d7e70c" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 123,72</p><p>Rodovia: BR-163/PR km 123,72</p></div></div>`)[0];
+                popup_738b1058044e12c1e075916be794cf34.setContent(html_d13b8fb5c9ac0c13828b72f402d7e70c);
+            
+        
+
+        marker_aeef32820ab86d9f8e43060f4361b00d.bindPopup(popup_738b1058044e12c1e075916be794cf34)
+        ;
+
+        
+    
+    
+            marker_aeef32820ab86d9f8e43060f4361b00d.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c271798abfc39b97dc5a43ac8802bc67 = L.marker(
+                [-29.6332, -50.10175],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_b36be3f7d69123b4b847295fcf5c43f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c271798abfc39b97dc5a43ac8802bc67.setIcon(icon_b36be3f7d69123b4b847295fcf5c43f1);
+        
+    
+        var popup_58046136453c29f272a014a8b687f7a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0373436c3891e346ebd47f4850b84852 = $(`<div id="html_0373436c3891e346ebd47f4850b84852" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Sanga Funda (LD)</p><p>Rodovia: BR-101/RS km 52,9</p></div></div>`)[0];
+                popup_58046136453c29f272a014a8b687f7a7.setContent(html_0373436c3891e346ebd47f4850b84852);
+            
+        
+
+        marker_c271798abfc39b97dc5a43ac8802bc67.bindPopup(popup_58046136453c29f272a014a8b687f7a7)
+        ;
+
+        
+    
+    
+            marker_c271798abfc39b97dc5a43ac8802bc67.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36bae5ac58daf0e132de7d34accc1fd0 = L.marker(
+                [-29.302333333333333, -49.771633333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_961759f129f03c22907dbfed6e87093a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_36bae5ac58daf0e132de7d34accc1fd0.setIcon(icon_961759f129f03c22907dbfed6e87093a);
+        
+    
+        var popup_e83e136c0afa1a6ca7231a9ed2c7f888 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbf8be970d0c5a476cd64ab63b5dfc21 = $(`<div id="html_bbf8be970d0c5a476cd64ab63b5dfc21" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 0,43 (LE)</p><p>Rodovia: BR-101/RS km 0,43</p></div></div>`)[0];
+                popup_e83e136c0afa1a6ca7231a9ed2c7f888.setContent(html_bbf8be970d0c5a476cd64ab63b5dfc21);
+            
+        
+
+        marker_36bae5ac58daf0e132de7d34accc1fd0.bindPopup(popup_e83e136c0afa1a6ca7231a9ed2c7f888)
+        ;
+
+        
+    
+    
+            marker_36bae5ac58daf0e132de7d34accc1fd0.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e8e501525fead6f6421a0870f82bec9 = L.marker(
+                [-15.8069, -55.29135],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_6fa274fb17df4d51dcc0eeb0c4cde5bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0e8e501525fead6f6421a0870f82bec9.setIcon(icon_6fa274fb17df4d51dcc0eeb0c4cde5bc);
+        
+    
+        var popup_d6b594b862cfc4ea5b96c31fa8b6544c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af017968fd92f8ff843bb90442ea636e = $(`<div id="html_af017968fd92f8ff843bb90442ea636e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio das Mortes (LE)</p><p>Rodovia: BR-163/MT km 235,62</p></div></div>`)[0];
+                popup_d6b594b862cfc4ea5b96c31fa8b6544c.setContent(html_af017968fd92f8ff843bb90442ea636e);
+            
+        
+
+        marker_0e8e501525fead6f6421a0870f82bec9.bindPopup(popup_d6b594b862cfc4ea5b96c31fa8b6544c)
+        ;
+
+        
+    
+    
+            marker_0e8e501525fead6f6421a0870f82bec9.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4235a5a60894e9ce62f552159d54f120 = L.marker(
+                [-15.713483333333333, -47.9007],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_e074ef422ac74468a91e40b0451f697f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4235a5a60894e9ce62f552159d54f120.setIcon(icon_e074ef422ac74468a91e40b0451f697f);
+        
+    
+        var popup_0b5b4e9cf19e9f6c31ec70ed0ba27b0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fc84772f6148e7c65654bed4fcbb48b = $(`<div id="html_1fc84772f6148e7c65654bed4fcbb48b" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 5,36</p><p>Rodovia: BR-450/DF km 5,36</p></div></div>`)[0];
+                popup_0b5b4e9cf19e9f6c31ec70ed0ba27b0a.setContent(html_1fc84772f6148e7c65654bed4fcbb48b);
+            
+        
+
+        marker_4235a5a60894e9ce62f552159d54f120.bindPopup(popup_0b5b4e9cf19e9f6c31ec70ed0ba27b0a)
+        ;
+
+        
+    
+    
+            marker_4235a5a60894e9ce62f552159d54f120.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b67cd6a560c13352aa346daa5df7bd4 = L.marker(
+                [-15.7284, -47.9095],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_77fb7da6ae897edd6ddee04938af48bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8b67cd6a560c13352aa346daa5df7bd4.setIcon(icon_77fb7da6ae897edd6ddee04938af48bb);
+        
+    
+        var popup_fae334bc59c638f6c2ce005efa20e9fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc0b0eadd823248ccb2ec7f39e4a6a1a = $(`<div id="html_fc0b0eadd823248ccb2ec7f39e4a6a1a" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Ribeirão Bananal (LE)</p><p>Rodovia: BR-450/DF km 7</p></div></div>`)[0];
+                popup_fae334bc59c638f6c2ce005efa20e9fd.setContent(html_fc0b0eadd823248ccb2ec7f39e4a6a1a);
+            
+        
+
+        marker_8b67cd6a560c13352aa346daa5df7bd4.bindPopup(popup_fae334bc59c638f6c2ce005efa20e9fd)
+        ;
+
+        
+    
+    
+            marker_8b67cd6a560c13352aa346daa5df7bd4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d64aa07976de2f15beea75f58e18d8a4 = L.marker(
+                [-16.618933333333334, -49.20648333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_ece74fee966831b8b254c06a3d9b95e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d64aa07976de2f15beea75f58e18d8a4.setIcon(icon_ece74fee966831b8b254c06a3d9b95e1);
+        
+    
+        var popup_36439aa02d96b9c5173985bafefbf260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23060842606ae5bb5038e419d20c3117 = $(`<div id="html_23060842606ae5bb5038e419d20c3117" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Trevo de Goiânia (LD)</p><p>Rodovia: BR-060/GO km 138,9</p></div></div>`)[0];
+                popup_36439aa02d96b9c5173985bafefbf260.setContent(html_23060842606ae5bb5038e419d20c3117);
+            
+        
+
+        marker_d64aa07976de2f15beea75f58e18d8a4.bindPopup(popup_36439aa02d96b9c5173985bafefbf260)
+        ;
+
+        
+    
+    
+            marker_d64aa07976de2f15beea75f58e18d8a4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_daf35048c847ec87acc19056e67720de = L.marker(
+                [-16.1464, -48.60463333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_703549f562b32bac621c15622551e7e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_daf35048c847ec87acc19056e67720de.setIcon(icon_703549f562b32bac621c15622551e7e7);
+        
+    
+        var popup_0268c83fe5709cf0a85091a111a5daa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e071e27fd7e6374a3bcf0c4f52bc45e = $(`<div id="html_2e071e27fd7e6374a3bcf0c4f52bc45e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Corumbá (LE)</p><p>Rodovia: BR-060/GO km 47</p></div></div>`)[0];
+                popup_0268c83fe5709cf0a85091a111a5daa8.setContent(html_2e071e27fd7e6374a3bcf0c4f52bc45e);
+            
+        
+
+        marker_daf35048c847ec87acc19056e67720de.bindPopup(popup_0268c83fe5709cf0a85091a111a5daa8)
+        ;
+
+        
+    
+    
+            marker_daf35048c847ec87acc19056e67720de.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c577c39c8b4387a221f952f0888fdd68 = L.marker(
+                [-16.101866666666666, -48.45988333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_db6b847877d8e16bab51b6a4a3bd15ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c577c39c8b4387a221f952f0888fdd68.setIcon(icon_db6b847877d8e16bab51b6a4a3bd15ef);
+        
+    
+        var popup_42be8e7475dac5b16fd56c5895c29203 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb343e45e803db168cc3451cc390d10c = $(`<div id="html_bb343e45e803db168cc3451cc390d10c" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Sapezal (LE)</p><p>Rodovia: BR-060/GO km 21,02</p></div></div>`)[0];
+                popup_42be8e7475dac5b16fd56c5895c29203.setContent(html_bb343e45e803db168cc3451cc390d10c);
+            
+        
+
+        marker_c577c39c8b4387a221f952f0888fdd68.bindPopup(popup_42be8e7475dac5b16fd56c5895c29203)
+        ;
+
+        
+    
+    
+            marker_c577c39c8b4387a221f952f0888fdd68.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e4fefb3e616da2e8e2376df956c1ca3 = L.marker(
+                [-16.668166666666668, -49.22626666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_bfbf9a6ea7f1288f163ac602b023d4a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3e4fefb3e616da2e8e2376df956c1ca3.setIcon(icon_bfbf9a6ea7f1288f163ac602b023d4a8);
+        
+    
+        var popup_3538cdbe6ca8cd47dcf629fd939acbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43d12ff9f83f5a8bdc30cf7e67fd8541 = $(`<div id="html_43d12ff9f83f5a8bdc30cf7e67fd8541" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiânia (LD)</p><p>Rodovia: BR-153/GO km 496,1</p></div></div>`)[0];
+                popup_3538cdbe6ca8cd47dcf629fd939acbd4.setContent(html_43d12ff9f83f5a8bdc30cf7e67fd8541);
+            
+        
+
+        marker_3e4fefb3e616da2e8e2376df956c1ca3.bindPopup(popup_3538cdbe6ca8cd47dcf629fd939acbd4)
+        ;
+
+        
+    
+    
+            marker_3e4fefb3e616da2e8e2376df956c1ca3.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_059a077edbc34ec71b68f86572242cd8 = L.marker(
+                [-16.669483333333332, -49.22695],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_113975b176813a8aa8652367740a0cb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_059a077edbc34ec71b68f86572242cd8.setIcon(icon_113975b176813a8aa8652367740a0cb6);
+        
+    
+        var popup_36036d93ddf933ece9f40939b63646a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55399cf5a133ca67ec8435a1526d36be = $(`<div id="html_55399cf5a133ca67ec8435a1526d36be" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiânia (LE)</p><p>Rodovia: BR-153/GO km 496,1</p></div></div>`)[0];
+                popup_36036d93ddf933ece9f40939b63646a2.setContent(html_55399cf5a133ca67ec8435a1526d36be);
+            
+        
+
+        marker_059a077edbc34ec71b68f86572242cd8.bindPopup(popup_36036d93ddf933ece9f40939b63646a2)
+        ;
+
+        
+    
+    
+            marker_059a077edbc34ec71b68f86572242cd8.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29c28b219776bdab2e2f9242056d7da1 = L.marker(
+                [-16.728083333333334, -49.24205],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_263b57e053b0c0efe46fc249359b3aca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_29c28b219776bdab2e2f9242056d7da1.setIcon(icon_263b57e053b0c0efe46fc249359b3aca);
+        
+    
+        var popup_9990aff1cec338bcfe6a16898e212367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06935ca98e5ae133a562ef77be25ca0c = $(`<div id="html_06935ca98e5ae133a562ef77be25ca0c" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiânia (LD)</p><p>Rodovia: BR-153/GO km 503,1</p></div></div>`)[0];
+                popup_9990aff1cec338bcfe6a16898e212367.setContent(html_06935ca98e5ae133a562ef77be25ca0c);
+            
+        
+
+        marker_29c28b219776bdab2e2f9242056d7da1.bindPopup(popup_9990aff1cec338bcfe6a16898e212367)
+        ;
+
+        
+    
+    
+            marker_29c28b219776bdab2e2f9242056d7da1.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0610e76e6d5e69f22842c0d7b1e36018 = L.marker(
+                [-16.728483333333333, -49.24216666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_3f564950f451f1fda75fa0386fd5006b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0610e76e6d5e69f22842c0d7b1e36018.setIcon(icon_3f564950f451f1fda75fa0386fd5006b);
+        
+    
+        var popup_7c194c3c3ff52a93a10dda12f93bc8a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3813f55a384c93741d00b410be8184d8 = $(`<div id="html_3813f55a384c93741d00b410be8184d8" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiânia (LE)</p><p>Rodovia: BR-153/GO km 503,1</p></div></div>`)[0];
+                popup_7c194c3c3ff52a93a10dda12f93bc8a8.setContent(html_3813f55a384c93741d00b410be8184d8);
+            
+        
+
+        marker_0610e76e6d5e69f22842c0d7b1e36018.bindPopup(popup_7c194c3c3ff52a93a10dda12f93bc8a8)
+        ;
+
+        
+    
+    
+            marker_0610e76e6d5e69f22842c0d7b1e36018.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77afcb185076b99a3d51bf66a5600330 = L.marker(
+                [-15.59565, -47.653933333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_e5e17f48fd3316d4ff9d363a035eadcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_77afcb185076b99a3d51bf66a5600330.setIcon(icon_e5e17f48fd3316d4ff9d363a035eadcf);
+        
+    
+        var popup_1364762c68b9af547f015ef5deebdf6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d65e254624b9fd358d2f2695a7fea14 = $(`<div id="html_8d65e254624b9fd358d2f2695a7fea14" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 24,400 (LD)</p><p>Rodovia: BR-020/DF km 24,4</p></div></div>`)[0];
+                popup_1364762c68b9af547f015ef5deebdf6b.setContent(html_8d65e254624b9fd358d2f2695a7fea14);
+            
+        
+
+        marker_77afcb185076b99a3d51bf66a5600330.bindPopup(popup_1364762c68b9af547f015ef5deebdf6b)
+        ;
+
+        
+    
+    
+            marker_77afcb185076b99a3d51bf66a5600330.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2294273a07bb1e3c19c8aaa4846d0b53 = L.marker(
+                [-15.59585, -47.653983333333336],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_42d8c696bc521e26eec78d6e3a86bf97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2294273a07bb1e3c19c8aaa4846d0b53.setIcon(icon_42d8c696bc521e26eec78d6e3a86bf97);
+        
+    
+        var popup_3bf01c6185e0cc630ac8bbb37b938500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49848e723ad0cd23a2c35d321c84852e = $(`<div id="html_49848e723ad0cd23a2c35d321c84852e" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 24,40 (LE)</p><p>Rodovia: BR-020/DF km 24,4</p></div></div>`)[0];
+                popup_3bf01c6185e0cc630ac8bbb37b938500.setContent(html_49848e723ad0cd23a2c35d321c84852e);
+            
+        
+
+        marker_2294273a07bb1e3c19c8aaa4846d0b53.bindPopup(popup_3bf01c6185e0cc630ac8bbb37b938500)
+        ;
+
+        
+    
+    
+            marker_2294273a07bb1e3c19c8aaa4846d0b53.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45daf39157b14a5b1f446038cd5fe665 = L.marker(
+                [-17.176233333333332, -49.210483333333336],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_219b4c8f4e498f0d4e366e39114ea13b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_45daf39157b14a5b1f446038cd5fe665.setIcon(icon_219b4c8f4e498f0d4e366e39114ea13b);
+        
+    
+        var popup_a937decd225ec95f4340823fb7bd070c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a72df8faa4443acd7cc5e25e0c62278 = $(`<div id="html_0a72df8faa4443acd7cc5e25e0c62278" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 554,90 (LD)</p><p>Rodovia: BR-153/GO km 554,9</p></div></div>`)[0];
+                popup_a937decd225ec95f4340823fb7bd070c.setContent(html_0a72df8faa4443acd7cc5e25e0c62278);
+            
+        
+
+        marker_45daf39157b14a5b1f446038cd5fe665.bindPopup(popup_a937decd225ec95f4340823fb7bd070c)
+        ;
+
+        
+    
+    
+            marker_45daf39157b14a5b1f446038cd5fe665.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1813cc81ad6f845b5efe8dd1c33f45f5 = L.marker(
+                [-17.17625, -49.21035],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_6e02e7282adfae97980710663df69de9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1813cc81ad6f845b5efe8dd1c33f45f5.setIcon(icon_6e02e7282adfae97980710663df69de9);
+        
+    
+        var popup_285f3dd1bc415920e72b277f8b538cde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b9e8d89f66836e68878799ab671dcec = $(`<div id="html_0b9e8d89f66836e68878799ab671dcec" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 554,90 (LE)</p><p>Rodovia: BR-153/GO km 554,9</p></div></div>`)[0];
+                popup_285f3dd1bc415920e72b277f8b538cde.setContent(html_0b9e8d89f66836e68878799ab671dcec);
+            
+        
+
+        marker_1813cc81ad6f845b5efe8dd1c33f45f5.bindPopup(popup_285f3dd1bc415920e72b277f8b538cde)
+        ;
+
+        
+    
+    
+            marker_1813cc81ad6f845b5efe8dd1c33f45f5.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ef7d7faff3d32ea4cff721b37caa5fd = L.marker(
+                [-17.524766666666668, -49.21553333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_368032dc5296b509b322f1d79c8ea3cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1ef7d7faff3d32ea4cff721b37caa5fd.setIcon(icon_368032dc5296b509b322f1d79c8ea3cc);
+        
+    
+        var popup_57e0df92b5c00d1a3b60f78cdd3bf857 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f6cfbfb8f2bc430fd5180d6787bb403 = $(`<div id="html_3f6cfbfb8f2bc430fd5180d6787bb403" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Morrinho (LD)</p><p>Rodovia: BR-153/GO km 597,7</p></div></div>`)[0];
+                popup_57e0df92b5c00d1a3b60f78cdd3bf857.setContent(html_3f6cfbfb8f2bc430fd5180d6787bb403);
+            
+        
+
+        marker_1ef7d7faff3d32ea4cff721b37caa5fd.bindPopup(popup_57e0df92b5c00d1a3b60f78cdd3bf857)
+        ;
+
+        
+    
+    
+            marker_1ef7d7faff3d32ea4cff721b37caa5fd.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9114fd38d44fb94fdcb5941e4e5931b0 = L.marker(
+                [-17.524766666666668, -49.21541666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_3f9fb003ddd9a5b534f4c5d9a2a1e90c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9114fd38d44fb94fdcb5941e4e5931b0.setIcon(icon_3f9fb003ddd9a5b534f4c5d9a2a1e90c);
+        
+    
+        var popup_77ce997654258b26404cb06b0c3a57f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a77fe34d6fdce49c6f8818e4269c4bd = $(`<div id="html_8a77fe34d6fdce49c6f8818e4269c4bd" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Morrinhos (LE)</p><p>Rodovia: BR-153/GO km 597,7</p></div></div>`)[0];
+                popup_77ce997654258b26404cb06b0c3a57f3.setContent(html_8a77fe34d6fdce49c6f8818e4269c4bd);
+            
+        
+
+        marker_9114fd38d44fb94fdcb5941e4e5931b0.bindPopup(popup_77ce997654258b26404cb06b0c3a57f3)
+        ;
+
+        
+    
+    
+            marker_9114fd38d44fb94fdcb5941e4e5931b0.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f31737f2141bda4306a8a14b682f41b = L.marker(
+                [-17.727483333333332, -49.15468333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_f062bfb4233a3d0ffc47046299609464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f31737f2141bda4306a8a14b682f41b.setIcon(icon_f062bfb4233a3d0ffc47046299609464);
+        
+    
+        var popup_457d4146bfe628c82e1c78d3aac98b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ea6e8a648f1507a664805a0946c06f5 = $(`<div id="html_5ea6e8a648f1507a664805a0946c06f5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto sobre a BR-153</p><p>Rodovia: BR-153/GO km 621,6</p></div></div>`)[0];
+                popup_457d4146bfe628c82e1c78d3aac98b6e.setContent(html_5ea6e8a648f1507a664805a0946c06f5);
+            
+        
+
+        marker_8f31737f2141bda4306a8a14b682f41b.bindPopup(popup_457d4146bfe628c82e1c78d3aac98b6e)
+        ;
+
+        
+    
+    
+            marker_8f31737f2141bda4306a8a14b682f41b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa6f901dc22dd389e8c7e1c340b4e1cc = L.marker(
+                [-18.0467, -49.26815],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_69d7afa42a3d462ae29aeb4dd0dca4ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa6f901dc22dd389e8c7e1c340b4e1cc.setIcon(icon_69d7afa42a3d462ae29aeb4dd0dca4ac);
+        
+    
+        var popup_180a9687228041bf54b9af373b0a8407 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d555a4a4e5a61288a4618b10be3f8df0 = $(`<div id="html_d555a4a4e5a61288a4618b10be3f8df0" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiatuba (LD)</p><p>Rodovia: BR-153/GO km 660,1</p></div></div>`)[0];
+                popup_180a9687228041bf54b9af373b0a8407.setContent(html_d555a4a4e5a61288a4618b10be3f8df0);
+            
+        
+
+        marker_fa6f901dc22dd389e8c7e1c340b4e1cc.bindPopup(popup_180a9687228041bf54b9af373b0a8407)
+        ;
+
+        
+    
+    
+            marker_fa6f901dc22dd389e8c7e1c340b4e1cc.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e476d3f4021a4837055c88f2cfa25fb4 = L.marker(
+                [-18.358, -49.216883333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_9690e127efb0ccc1c135e4058a8592ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e476d3f4021a4837055c88f2cfa25fb4.setIcon(icon_9690e127efb0ccc1c135e4058a8592ad);
+        
+    
+        var popup_5e2808ca00d232ad1c585b251101da2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_833992fd70c962b1d7ab3ffffc3762a9 = $(`<div id="html_833992fd70c962b1d7ab3ffffc3762a9" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Itumbiara (LD)</p><p>Rodovia: BR-153/GO km 696,7</p></div></div>`)[0];
+                popup_5e2808ca00d232ad1c585b251101da2d.setContent(html_833992fd70c962b1d7ab3ffffc3762a9);
+            
+        
+
+        marker_e476d3f4021a4837055c88f2cfa25fb4.bindPopup(popup_5e2808ca00d232ad1c585b251101da2d)
+        ;
+
+        
+    
+    
+            marker_e476d3f4021a4837055c88f2cfa25fb4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7398a05cc9f1736eb70d8d9b87e8ed1 = L.marker(
+                [-18.357916666666668, -49.21673333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_1d5d7dc09700e2441a1ad4ce2f5f4401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d7398a05cc9f1736eb70d8d9b87e8ed1.setIcon(icon_1d5d7dc09700e2441a1ad4ce2f5f4401);
+        
+    
+        var popup_a0cf0a909eb1dc8302985cbae1901829 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d455817ae06d388357ba344f0cd13a8 = $(`<div id="html_4d455817ae06d388357ba344f0cd13a8" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Itumbiara (LE)</p><p>Rodovia: BR-153/GO km 696,7</p></div></div>`)[0];
+                popup_a0cf0a909eb1dc8302985cbae1901829.setContent(html_4d455817ae06d388357ba344f0cd13a8);
+            
+        
+
+        marker_d7398a05cc9f1736eb70d8d9b87e8ed1.bindPopup(popup_a0cf0a909eb1dc8302985cbae1901829)
+        ;
+
+        
+    
+    
+            marker_d7398a05cc9f1736eb70d8d9b87e8ed1.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1014fb0f9a313e7842eb5e35cdb2524 = L.marker(
+                [-18.400166666666667, -49.203183333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_3fe287dfe6eb6f44842e1ab89b11ce1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c1014fb0f9a313e7842eb5e35cdb2524.setIcon(icon_3fe287dfe6eb6f44842e1ab89b11ce1f);
+        
+    
+        var popup_43efd3bf6f69e79ad3b75e5f47c405e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a771906e71a8cf129da71c89a4fbfe40 = $(`<div id="html_a771906e71a8cf129da71c89a4fbfe40" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Itumbiara (LD)</p><p>Rodovia: BR-153/GO km 701,6</p></div></div>`)[0];
+                popup_43efd3bf6f69e79ad3b75e5f47c405e5.setContent(html_a771906e71a8cf129da71c89a4fbfe40);
+            
+        
+
+        marker_c1014fb0f9a313e7842eb5e35cdb2524.bindPopup(popup_43efd3bf6f69e79ad3b75e5f47c405e5)
+        ;
+
+        
+    
+    
+            marker_c1014fb0f9a313e7842eb5e35cdb2524.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a68c721c535501b7e4655a7fd794b759 = L.marker(
+                [-18.4059, -49.20025],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4e953e6a4174369778ed45a689d64159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a68c721c535501b7e4655a7fd794b759.setIcon(icon_4e953e6a4174369778ed45a689d64159);
+        
+    
+        var popup_99e7b5fa5ee05ec5aef9765c2b290d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f4a7c02fcf987d666a14aa0a7f684b1 = $(`<div id="html_7f4a7c02fcf987d666a14aa0a7f684b1" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto acesso a Itumbiara (LD)</p><p>Rodovia: BR-153/GO km 702,3</p></div></div>`)[0];
+                popup_99e7b5fa5ee05ec5aef9765c2b290d7f.setContent(html_7f4a7c02fcf987d666a14aa0a7f684b1);
+            
+        
+
+        marker_a68c721c535501b7e4655a7fd794b759.bindPopup(popup_99e7b5fa5ee05ec5aef9765c2b290d7f)
+        ;
+
+        
+    
+    
+            marker_a68c721c535501b7e4655a7fd794b759.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fc4ba4c285f286d59ce183311eeba93 = L.marker(
+                [-17.146883333333335, -49.21555],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4a42733dd804a9378d502ca8a2c914e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2fc4ba4c285f286d59ce183311eeba93.setIcon(icon_4a42733dd804a9378d502ca8a2c914e3);
+        
+    
+        var popup_e440b81cf7ccc31a9836c6fbde018259 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8c841f67b6cc41cc38a1b579bd073a5 = $(`<div id="html_a8c841f67b6cc41cc38a1b579bd073a5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Córrego Grimpas (LD)</p><p>Rodovia: BR-153/GO km 551,68</p></div></div>`)[0];
+                popup_e440b81cf7ccc31a9836c6fbde018259.setContent(html_a8c841f67b6cc41cc38a1b579bd073a5);
+            
+        
+
+        marker_2fc4ba4c285f286d59ce183311eeba93.bindPopup(popup_e440b81cf7ccc31a9836c6fbde018259)
+        ;
+
+        
+    
+    
+            marker_2fc4ba4c285f286d59ce183311eeba93.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35f3359740ce2e2433a0fd1e10058c52 = L.marker(
+                [-17.5194, -49.21606666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_27adb0f11307f4b6ad1b294aa78dbb1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_35f3359740ce2e2433a0fd1e10058c52.setIcon(icon_27adb0f11307f4b6ad1b294aa78dbb1b);
+        
+    
+        var popup_41c2ca74f0cd346e6aafe308140ceee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e916a59874dd970e4b7c40eda1490fab = $(`<div id="html_e916a59874dd970e4b7c40eda1490fab" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Ribeirão Formiga (LD)</p><p>Rodovia: BR-153/GO km 591,05</p></div></div>`)[0];
+                popup_41c2ca74f0cd346e6aafe308140ceee4.setContent(html_e916a59874dd970e4b7c40eda1490fab);
+            
+        
+
+        marker_35f3359740ce2e2433a0fd1e10058c52.bindPopup(popup_41c2ca74f0cd346e6aafe308140ceee4)
+        ;
+
+        
+    
+    
+            marker_35f3359740ce2e2433a0fd1e10058c52.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c4cf05caaa278b4f19af873a4e67d85 = L.marker(
+                [-17.5194, -49.21595],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_58301cbea967fec2a8c64fc32a71af0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1c4cf05caaa278b4f19af873a4e67d85.setIcon(icon_58301cbea967fec2a8c64fc32a71af0b);
+        
+    
+        var popup_99c27b92c3397e4cc2f0cd59b81f3289 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef43bf101accd3075cfe28c3ae1f36cb = $(`<div id="html_ef43bf101accd3075cfe28c3ae1f36cb" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Ribeirão Formiga (LE)</p><p>Rodovia: BR-153/GO km 597,05</p></div></div>`)[0];
+                popup_99c27b92c3397e4cc2f0cd59b81f3289.setContent(html_ef43bf101accd3075cfe28c3ae1f36cb);
+            
+        
+
+        marker_1c4cf05caaa278b4f19af873a4e67d85.bindPopup(popup_99c27b92c3397e4cc2f0cd59b81f3289)
+        ;
+
+        
+    
+    
+            marker_1c4cf05caaa278b4f19af873a4e67d85.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e222511e2cbd6768acbcba1144be518 = L.marker(
+                [-18.4057, -49.200183333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4742c552e0beee8ff71053fc72c137e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6e222511e2cbd6768acbcba1144be518.setIcon(icon_4742c552e0beee8ff71053fc72c137e5);
+        
+    
+        var popup_1f943938c7378a49a57c07771e900560 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf368ea907006325aef446f841bd2919 = $(`<div id="html_bf368ea907006325aef446f841bd2919" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto acesso a Itumbiara (LE)</p><p>Rodovia: BR-153/GO km 702,3</p></div></div>`)[0];
+                popup_1f943938c7378a49a57c07771e900560.setContent(html_bf368ea907006325aef446f841bd2919);
+            
+        
+
+        marker_6e222511e2cbd6768acbcba1144be518.bindPopup(popup_1f943938c7378a49a57c07771e900560)
+        ;
+
+        
+    
+    
+            marker_6e222511e2cbd6768acbcba1144be518.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d56b60d427a06d38a4ef7e2c13199a9 = L.marker(
+                [-16.61895, -49.20636666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_b9b261758a41c8df0f6c38762ee5bbd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9d56b60d427a06d38a4ef7e2c13199a9.setIcon(icon_b9b261758a41c8df0f6c38762ee5bbd8);
+        
+    
+        var popup_66609e63526ec951d1449a19b7990a93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89a99f309f4f621dd2e8548a919159a6 = $(`<div id="html_89a99f309f4f621dd2e8548a919159a6" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Trevo de Goiânia (LE)</p><p>Rodovia: BR-060/GO km 138,9</p></div></div>`)[0];
+                popup_66609e63526ec951d1449a19b7990a93.setContent(html_89a99f309f4f621dd2e8548a919159a6);
+            
+        
+
+        marker_9d56b60d427a06d38a4ef7e2c13199a9.bindPopup(popup_66609e63526ec951d1449a19b7990a93)
+        ;
+
+        
+    
+    
+            marker_9d56b60d427a06d38a4ef7e2c13199a9.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74b5295af00fac07d4bdfb1ec2be8bab = L.marker(
+                [-16.110883333333334, -48.35093333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_438aba16ad1b4a60e8fa5872bcf9a657 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_74b5295af00fac07d4bdfb1ec2be8bab.setIcon(icon_438aba16ad1b4a60e8fa5872bcf9a657);
+        
+    
+        var popup_cd279f9fed1f5cf8d8b52de7f7d16716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4dcea315d9cafd01b3d10ac65adfecc = $(`<div id="html_f4dcea315d9cafd01b3d10ac65adfecc" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Areia (LD)</p><p>Rodovia: BR-060/GO km 13,9</p></div></div>`)[0];
+                popup_cd279f9fed1f5cf8d8b52de7f7d16716.setContent(html_f4dcea315d9cafd01b3d10ac65adfecc);
+            
+        
+
+        marker_74b5295af00fac07d4bdfb1ec2be8bab.bindPopup(popup_cd279f9fed1f5cf8d8b52de7f7d16716)
+        ;
+
+        
+    
+    
+            marker_74b5295af00fac07d4bdfb1ec2be8bab.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7b13aa3ea4e73b7c92dc827a4be5332 = L.marker(
+                [-16.3538, -48.92816666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_937debef4edd74142b3a426f8511d913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a7b13aa3ea4e73b7c92dc827a4be5332.setIcon(icon_937debef4edd74142b3a426f8511d913);
+        
+    
+        var popup_1e5c95e1105c6d0badfad63a19c7fd32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dd50f4db901955b269bcadddf758b46 = $(`<div id="html_7dd50f4db901955b269bcadddf758b46" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Anápolis (LD)</p><p>Rodovia: BR-060/GO km 93,16</p></div></div>`)[0];
+                popup_1e5c95e1105c6d0badfad63a19c7fd32.setContent(html_7dd50f4db901955b269bcadddf758b46);
+            
+        
+
+        marker_a7b13aa3ea4e73b7c92dc827a4be5332.bindPopup(popup_1e5c95e1105c6d0badfad63a19c7fd32)
+        ;
+
+        
+    
+    
+            marker_a7b13aa3ea4e73b7c92dc827a4be5332.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11e32ae4aa93cf7de4cf3fdd11ad2554 = L.marker(
+                [-16.35395, -48.92815],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_f0314b64fc553e247d9ca24e4d472e02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_11e32ae4aa93cf7de4cf3fdd11ad2554.setIcon(icon_f0314b64fc553e247d9ca24e4d472e02);
+        
+    
+        var popup_436009d17231d06a9cc88a245c45b149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd366a91bb7169f17fd4870b0102c28d = $(`<div id="html_dd366a91bb7169f17fd4870b0102c28d" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Anápolis (LE)</p><p>Rodovia: BR-060/GO km 93,16</p></div></div>`)[0];
+                popup_436009d17231d06a9cc88a245c45b149.setContent(html_dd366a91bb7169f17fd4870b0102c28d);
+            
+        
+
+        marker_11e32ae4aa93cf7de4cf3fdd11ad2554.bindPopup(popup_436009d17231d06a9cc88a245c45b149)
+        ;
+
+        
+    
+    
+            marker_11e32ae4aa93cf7de4cf3fdd11ad2554.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b210af5ffd10cefdb69f064052782a9e = L.marker(
+                [-17.445416666666667, -49.230466666666665],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_180a4c3eb93f20f8d77779cc7de506ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b210af5ffd10cefdb69f064052782a9e.setIcon(icon_180a4c3eb93f20f8d77779cc7de506ec);
+        
+    
+        var popup_c13bfed9bbca2bc0026e50efaa406bf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5071d3f79ff50f06244f48f910bcd275 = $(`<div id="html_5071d3f79ff50f06244f48f910bcd275" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Meia Ponte (LD)</p><p>Rodovia: BR-153/GO km 588,2</p></div></div>`)[0];
+                popup_c13bfed9bbca2bc0026e50efaa406bf6.setContent(html_5071d3f79ff50f06244f48f910bcd275);
+            
+        
+
+        marker_b210af5ffd10cefdb69f064052782a9e.bindPopup(popup_c13bfed9bbca2bc0026e50efaa406bf6)
+        ;
+
+        
+    
+    
+            marker_b210af5ffd10cefdb69f064052782a9e.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_216929d3061c51f5cc3e5551a97d60d6 = L.marker(
+                [-15.6816, -47.83756666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_00a71f8d39088d1ba526350b06d69f29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_216929d3061c51f5cc3e5551a97d60d6.setIcon(icon_00a71f8d39088d1ba526350b06d69f29);
+        
+    
+        var popup_fc01c9c82770674544feefadb64abc55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a12ab929e02d1702201487001f84bc00 = $(`<div id="html_a12ab929e02d1702201487001f84bc00" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 2,40 (LE)</p><p>Rodovia: BR-020/DF km 2,4</p></div></div>`)[0];
+                popup_fc01c9c82770674544feefadb64abc55.setContent(html_a12ab929e02d1702201487001f84bc00);
+            
+        
+
+        marker_216929d3061c51f5cc3e5551a97d60d6.bindPopup(popup_fc01c9c82770674544feefadb64abc55)
+        ;
+
+        
+    
+    
+            marker_216929d3061c51f5cc3e5551a97d60d6.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45a7d5cdc32d8bdb4b470f72a78733ae = L.marker(
+                [-16.645483333333335, -49.21105],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_a481f1bc1451c116f4fe218f8e238425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_45a7d5cdc32d8bdb4b470f72a78733ae.setIcon(icon_a481f1bc1451c116f4fe218f8e238425);
+        
+    
+        var popup_29fcf9b024b1e481ff31507a64f9c953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77026fcf506404e3ef9fc65950da34ff = $(`<div id="html_77026fcf506404e3ef9fc65950da34ff" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiânia (LD)</p><p>Rodovia: BR-153/GO km 492,8</p></div></div>`)[0];
+                popup_29fcf9b024b1e481ff31507a64f9c953.setContent(html_77026fcf506404e3ef9fc65950da34ff);
+            
+        
+
+        marker_45a7d5cdc32d8bdb4b470f72a78733ae.bindPopup(popup_29fcf9b024b1e481ff31507a64f9c953)
+        ;
+
+        
+    
+    
+            marker_45a7d5cdc32d8bdb4b470f72a78733ae.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12f1f9e3dc1ccd2b788cdd343da2645e = L.marker(
+                [-16.645616666666665, -49.21111666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_72d662a2ae1a68bf80c3c9e148a68596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_12f1f9e3dc1ccd2b788cdd343da2645e.setIcon(icon_72d662a2ae1a68bf80c3c9e148a68596);
+        
+    
+        var popup_73b2bd5ccf69223244746f10ad9e12f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46fdfbea14000c828a8220861c3eae9f = $(`<div id="html_46fdfbea14000c828a8220861c3eae9f" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Goiânia (LE)</p><p>Rodovia: BR-153/GO km 492,8</p></div></div>`)[0];
+                popup_73b2bd5ccf69223244746f10ad9e12f7.setContent(html_46fdfbea14000c828a8220861c3eae9f);
+            
+        
+
+        marker_12f1f9e3dc1ccd2b788cdd343da2645e.bindPopup(popup_73b2bd5ccf69223244746f10ad9e12f7)
+        ;
+
+        
+    
+    
+            marker_12f1f9e3dc1ccd2b788cdd343da2645e.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_592bc09aca658949153491c94cd8175d = L.marker(
+                [-15.882066666666667, -48.060433333333336],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_45985dd4134b70e680c5e201070e8f24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_592bc09aca658949153491c94cd8175d.setIcon(icon_45985dd4134b70e680c5e201070e8f24);
+        
+    
+        var popup_72e6d365dbef5863ea320ec318e17d51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd7b4500ee72c190bc9710e33d5bad39 = $(`<div id="html_cd7b4500ee72c190bc9710e33d5bad39" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Brasília (LD)</p><p>Rodovia: BR-060/DF km 0,1</p></div></div>`)[0];
+                popup_72e6d365dbef5863ea320ec318e17d51.setContent(html_cd7b4500ee72c190bc9710e33d5bad39);
+            
+        
+
+        marker_592bc09aca658949153491c94cd8175d.bindPopup(popup_72e6d365dbef5863ea320ec318e17d51)
+        ;
+
+        
+    
+    
+            marker_592bc09aca658949153491c94cd8175d.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_332f98ca866b295c7b43c05f3ffc3446 = L.marker(
+                [-15.907683333333333, -48.14465],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_d40818a0cb4c11de61a91bb2eb6cf7be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_332f98ca866b295c7b43c05f3ffc3446.setIcon(icon_d40818a0cb4c11de61a91bb2eb6cf7be);
+        
+    
+        var popup_8ea79e9b32173638ae7d23322f499b9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9608fc911fea10e49e314bc543e77554 = $(`<div id="html_9608fc911fea10e49e314bc543e77554" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Brasília (LD)</p><p>Rodovia: BR-060/DF km 9,6</p></div></div>`)[0];
+                popup_8ea79e9b32173638ae7d23322f499b9d.setContent(html_9608fc911fea10e49e314bc543e77554);
+            
+        
+
+        marker_332f98ca866b295c7b43c05f3ffc3446.bindPopup(popup_8ea79e9b32173638ae7d23322f499b9d)
+        ;
+
+        
+    
+    
+            marker_332f98ca866b295c7b43c05f3ffc3446.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81d23e3b872ac8042dfaec18984fbb56 = L.marker(
+                [-15.907883333333332, -48.14456666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_0e106e99cbb73385c214e53824c56a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_81d23e3b872ac8042dfaec18984fbb56.setIcon(icon_0e106e99cbb73385c214e53824c56a4c);
+        
+    
+        var popup_5c9da7fb5c8eac1cac617cbdbf99e817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcc8be6e811b006e4f8e6696eded7db0 = $(`<div id="html_bcc8be6e811b006e4f8e6696eded7db0" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto próximo a cidade de Brasília (LE)</p><p>Rodovia: BR-060/DF km 9,6</p></div></div>`)[0];
+                popup_5c9da7fb5c8eac1cac617cbdbf99e817.setContent(html_bcc8be6e811b006e4f8e6696eded7db0);
+            
+        
+
+        marker_81d23e3b872ac8042dfaec18984fbb56.bindPopup(popup_5c9da7fb5c8eac1cac617cbdbf99e817)
+        ;
+
+        
+    
+    
+            marker_81d23e3b872ac8042dfaec18984fbb56.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_febe029f46ce9a0e6eb142cee6d64b1f = L.marker(
+                [-5.799916666666666, -35.2384],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_025b11e54884e8ccc3c867017bc43e7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_febe029f46ce9a0e6eb142cee6d64b1f.setIcon(icon_025b11e54884e8ccc3c867017bc43e7d);
+        
+    
+        var popup_9656c13f5a4a7b230ab90df319dfc335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c55a72c4c536bf292fd0b15402273e42 = $(`<div id="html_c55a72c4c536bf292fd0b15402273e42" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 88,00				</p><p>Rodovia: BR-101/RN km 88</p></div></div>`)[0];
+                popup_9656c13f5a4a7b230ab90df319dfc335.setContent(html_c55a72c4c536bf292fd0b15402273e42);
+            
+        
+
+        marker_febe029f46ce9a0e6eb142cee6d64b1f.bindPopup(popup_9656c13f5a4a7b230ab90df319dfc335)
+        ;
+
+        
+    
+    
+            marker_febe029f46ce9a0e6eb142cee6d64b1f.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff4c98e6ee6e1a2a107eb505bef53041 = L.marker(
+                [-5.8868, -35.23243333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_534ceed335474d10161d7beee8bc2ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ff4c98e6ee6e1a2a107eb505bef53041.setIcon(icon_534ceed335474d10161d7beee8bc2ba7);
+        
+    
+        var popup_483844042cc8363a2e9b619cc13663d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43932198a20f4ce68c2a19fad7e6348d = $(`<div id="html_43932198a20f4ce68c2a19fad7e6348d" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto Emaús</p><p>Rodovia: BR-101/RN km 101,31</p></div></div>`)[0];
+                popup_483844042cc8363a2e9b619cc13663d5.setContent(html_43932198a20f4ce68c2a19fad7e6348d);
+            
+        
+
+        marker_ff4c98e6ee6e1a2a107eb505bef53041.bindPopup(popup_483844042cc8363a2e9b619cc13663d5)
+        ;
+
+        
+    
+    
+            marker_ff4c98e6ee6e1a2a107eb505bef53041.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6eb7102a4c0970b33db73645e63a45dd = L.marker(
+                [-5.875733333333333, -35.22248333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4da7de847b87defdf8aa7584ac979312 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6eb7102a4c0970b33db73645e63a45dd.setIcon(icon_4da7de847b87defdf8aa7584ac979312);
+        
+    
+        var popup_f3b6896bd7f0e34e2ba90c82ccfdf991 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a9165330d5a5e25c6427a71a737dda9 = $(`<div id="html_0a9165330d5a5e25c6427a71a737dda9" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Passagem inferior Av. Maria Lacerda</p><p>Rodovia: BR-101/RN km 99,52</p></div></div>`)[0];
+                popup_f3b6896bd7f0e34e2ba90c82ccfdf991.setContent(html_0a9165330d5a5e25c6427a71a737dda9);
+            
+        
+
+        marker_6eb7102a4c0970b33db73645e63a45dd.bindPopup(popup_f3b6896bd7f0e34e2ba90c82ccfdf991)
+        ;
+
+        
+    
+    
+            marker_6eb7102a4c0970b33db73645e63a45dd.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99c18de38da883db4b46faf35d126739 = L.marker(
+                [-2.46235, -44.79065],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_ba0e963175acdee07c112f8620758d5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_99c18de38da883db4b46faf35d126739.setIcon(icon_ba0e963175acdee07c112f8620758d5a);
+        
+    
+        var popup_65387fc1606b656ddc0fa2c53f4444fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_711106e611b262a5a62cf67a54d859e0 = $(`<div id="html_711106e611b262a5a62cf67a54d859e0" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte km 274,62</p><p>Rodovia: BR-308/MA km 274,62</p></div></div>`)[0];
+                popup_65387fc1606b656ddc0fa2c53f4444fa.setContent(html_711106e611b262a5a62cf67a54d859e0);
+            
+        
+
+        marker_99c18de38da883db4b46faf35d126739.bindPopup(popup_65387fc1606b656ddc0fa2c53f4444fa)
+        ;
+
+        
+    
+    
+            marker_99c18de38da883db4b46faf35d126739.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a738bde30f8a226a87b02f9d9dbe5355 = L.marker(
+                [-27.723683333333334, -48.64398333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_b737613531469722eb78bd134fd74cf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a738bde30f8a226a87b02f9d9dbe5355.setIcon(icon_b737613531469722eb78bd134fd74cf5);
+        
+    
+        var popup_8bf21d16914eeaac32570e6776bcd81e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d4cc9d375cc964e640684fafdb5c84f = $(`<div id="html_0d4cc9d375cc964e640684fafdb5c84f" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre Rio Cambirela (LE)</p><p>Rodovia: BR-101/SC km 224,1</p></div></div>`)[0];
+                popup_8bf21d16914eeaac32570e6776bcd81e.setContent(html_0d4cc9d375cc964e640684fafdb5c84f);
+            
+        
+
+        marker_a738bde30f8a226a87b02f9d9dbe5355.bindPopup(popup_8bf21d16914eeaac32570e6776bcd81e)
+        ;
+
+        
+    
+    
+            marker_a738bde30f8a226a87b02f9d9dbe5355.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184530b5e7f405fd4470a7e2e184ed55 = L.marker(
+                [-27.738383333333335, -48.63928333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_6ebbcfd187140e7cf99a79da0d3d03ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_184530b5e7f405fd4470a7e2e184ed55.setIcon(icon_6ebbcfd187140e7cf99a79da0d3d03ec);
+        
+    
+        var popup_ff61fbffbb0ddaaa01344b21d1e65bdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6461f1d8c1a1821361f1074fb1f8fbfb = $(`<div id="html_6461f1d8c1a1821361f1074fb1f8fbfb" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio do Neto (LE)</p><p>Rodovia: BR-101/SC km 225,7</p></div></div>`)[0];
+                popup_ff61fbffbb0ddaaa01344b21d1e65bdb.setContent(html_6461f1d8c1a1821361f1074fb1f8fbfb);
+            
+        
+
+        marker_184530b5e7f405fd4470a7e2e184ed55.bindPopup(popup_ff61fbffbb0ddaaa01344b21d1e65bdb)
+        ;
+
+        
+    
+    
+            marker_184530b5e7f405fd4470a7e2e184ed55.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83aa6e03c03b78ea703cbfc2e2dfdcdc = L.marker(
+                [-20.223983333333333, -40.287366666666664],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_e3ae58da792be2704373fcbe467407df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_83aa6e03c03b78ea703cbfc2e2dfdcdc.setIcon(icon_e3ae58da792be2704373fcbe467407df);
+        
+    
+        var popup_23a3be3e41bd2ad817da519189dba9d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32ebbaa48fd43de5c8c49b3020d1b87f = $(`<div id="html_32ebbaa48fd43de5c8c49b3020d1b87f" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 271,00</p><p>Rodovia: BR-101/ES km 271</p></div></div>`)[0];
+                popup_23a3be3e41bd2ad817da519189dba9d0.setContent(html_32ebbaa48fd43de5c8c49b3020d1b87f);
+            
+        
+
+        marker_83aa6e03c03b78ea703cbfc2e2dfdcdc.bindPopup(popup_23a3be3e41bd2ad817da519189dba9d0)
+        ;
+
+        
+    
+    
+            marker_83aa6e03c03b78ea703cbfc2e2dfdcdc.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49150bf8aacdb41835bdd420f67a7806 = L.marker(
+                [-20.1231, -40.30546666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4b97626dfcadf32b26db689e64bc1e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_49150bf8aacdb41835bdd420f67a7806.setIcon(icon_4b97626dfcadf32b26db689e64bc1e57);
+        
+    
+        var popup_df39f1fdd1f56e12a179322531bb8174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eae31594073857db1f26b7e1e18427e5 = $(`<div id="html_eae31594073857db1f26b7e1e18427e5" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 256,21</p><p>Rodovia: BR-101/ES km 256,21</p></div></div>`)[0];
+                popup_df39f1fdd1f56e12a179322531bb8174.setContent(html_eae31594073857db1f26b7e1e18427e5);
+            
+        
+
+        marker_49150bf8aacdb41835bdd420f67a7806.bindPopup(popup_df39f1fdd1f56e12a179322531bb8174)
+        ;
+
+        
+    
+    
+            marker_49150bf8aacdb41835bdd420f67a7806.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88b4150ac620d2d210ae077f8d0158b2 = L.marker(
+                [-19.407283333333332, -40.06426666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_97fe996d3076438810a55f7685870129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_88b4150ac620d2d210ae077f8d0158b2.setIcon(icon_97fe996d3076438810a55f7685870129);
+        
+    
+        var popup_b3f16789ee22bed8be811bbd3c79bc7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecbd11b35702eea5d849c8bffa85af59 = $(`<div id="html_ecbd11b35702eea5d849c8bffa85af59" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 150,49</p><p>Rodovia: BR-101/ES km 150,49</p></div></div>`)[0];
+                popup_b3f16789ee22bed8be811bbd3c79bc7e.setContent(html_ecbd11b35702eea5d849c8bffa85af59);
+            
+        
+
+        marker_88b4150ac620d2d210ae077f8d0158b2.bindPopup(popup_b3f16789ee22bed8be811bbd3c79bc7e)
+        ;
+
+        
+    
+    
+            marker_88b4150ac620d2d210ae077f8d0158b2.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c13cc5291e05681f0604de06e91e371 = L.marker(
+                [-18.724516666666666, -39.86045],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_dbd5938a5871bda427d6a25f10c73425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6c13cc5291e05681f0604de06e91e371.setIcon(icon_dbd5938a5871bda427d6a25f10c73425);
+        
+    
+        var popup_5b846d9783c4570fc554d155ebab0db3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21a78bf3611b2aeb1d3735e39bb07cf1 = $(`<div id="html_21a78bf3611b2aeb1d3735e39bb07cf1" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 66,60</p><p>Rodovia: BR-101/ES km 66,6</p></div></div>`)[0];
+                popup_5b846d9783c4570fc554d155ebab0db3.setContent(html_21a78bf3611b2aeb1d3735e39bb07cf1);
+            
+        
+
+        marker_6c13cc5291e05681f0604de06e91e371.bindPopup(popup_5b846d9783c4570fc554d155ebab0db3)
+        ;
+
+        
+    
+    
+            marker_6c13cc5291e05681f0604de06e91e371.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f34d8cbd2c6945cbd291c8e131e6fd6d = L.marker(
+                [-18.71315, -39.8783],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_402c1df42d469890a3474ec3bc704a9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f34d8cbd2c6945cbd291c8e131e6fd6d.setIcon(icon_402c1df42d469890a3474ec3bc704a9f);
+        
+    
+        var popup_df563eac0b3a45479a804d240a5d4911 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3967c6a9ebb2a0c740664b62d0d677b = $(`<div id="html_f3967c6a9ebb2a0c740664b62d0d677b" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 65,42</p><p>Rodovia: BR-101/ES km 65,42</p></div></div>`)[0];
+                popup_df563eac0b3a45479a804d240a5d4911.setContent(html_f3967c6a9ebb2a0c740664b62d0d677b);
+            
+        
+
+        marker_f34d8cbd2c6945cbd291c8e131e6fd6d.bindPopup(popup_df563eac0b3a45479a804d240a5d4911)
+        ;
+
+        
+    
+    
+            marker_f34d8cbd2c6945cbd291c8e131e6fd6d.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a777d9dddd4feb7acd3945c6fe844a0 = L.marker(
+                [-20.806166666666666, -40.832233333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_07b0ccc41e2d30c7f55c139107fc9b70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2a777d9dddd4feb7acd3945c6fe844a0.setIcon(icon_07b0ccc41e2d30c7f55c139107fc9b70);
+        
+    
+        var popup_fe03542ca68ef77154024bf9c546fe68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_844d81debb6605c340211053587df3dd = $(`<div id="html_844d81debb6605c340211053587df3dd" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Córrego Tocaia</p><p>Rodovia: BR-101/ES km 377,2</p></div></div>`)[0];
+                popup_fe03542ca68ef77154024bf9c546fe68.setContent(html_844d81debb6605c340211053587df3dd);
+            
+        
+
+        marker_2a777d9dddd4feb7acd3945c6fe844a0.bindPopup(popup_fe03542ca68ef77154024bf9c546fe68)
+        ;
+
+        
+    
+    
+            marker_2a777d9dddd4feb7acd3945c6fe844a0.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56e42ddf6d694cb071d203e80528c9f7 = L.marker(
+                [-20.282066666666665, -40.39325],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_5de66031ddbf030b3ec8fd89890102b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_56e42ddf6d694cb071d203e80528c9f7.setIcon(icon_5de66031ddbf030b3ec8fd89890102b8);
+        
+    
+        var popup_016f42b2ca5639fee38943f4ae64fc60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e3f3089d8bc53f8ff1a62fcdcd2ac16 = $(`<div id="html_1e3f3089d8bc53f8ff1a62fcdcd2ac16" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Bubu (LE)</p><p>Rodovia: BR-101/ES km 281,28</p></div></div>`)[0];
+                popup_016f42b2ca5639fee38943f4ae64fc60.setContent(html_1e3f3089d8bc53f8ff1a62fcdcd2ac16);
+            
+        
+
+        marker_56e42ddf6d694cb071d203e80528c9f7.bindPopup(popup_016f42b2ca5639fee38943f4ae64fc60)
+        ;
+
+        
+    
+    
+            marker_56e42ddf6d694cb071d203e80528c9f7.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7ac9eccb5aa8a11925f22adc621ff9c = L.marker(
+                [-20.2171, -40.33108333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_9231ceeb995dd9a122acdf8e9336386b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b7ac9eccb5aa8a11925f22adc621ff9c.setIcon(icon_9231ceeb995dd9a122acdf8e9336386b);
+        
+    
+        var popup_1b63961216d49f1871601d479c2e215e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cb46c9db5e883b88b2d9630a7aeb9fd = $(`<div id="html_9cb46c9db5e883b88b2d9630a7aeb9fd" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto km 275,23</p><p>Rodovia: BR-101/ES km 275,23</p></div></div>`)[0];
+                popup_1b63961216d49f1871601d479c2e215e.setContent(html_9cb46c9db5e883b88b2d9630a7aeb9fd);
+            
+        
+
+        marker_b7ac9eccb5aa8a11925f22adc621ff9c.bindPopup(popup_1b63961216d49f1871601d479c2e215e)
+        ;
+
+        
+    
+    
+            marker_b7ac9eccb5aa8a11925f22adc621ff9c.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2df06c1b2615cb004ddddd92c9501c69 = L.marker(
+                [-20.8967, -41.04711666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_5e42c61c7873ab6024fd60349c91e443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2df06c1b2615cb004ddddd92c9501c69.setIcon(icon_5e42c61c7873ab6024fd60349c91e443);
+        
+    
+        var popup_b99ab93ee3bd023323eeb72589eab8f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306618246688cec5fc7b0e41971fc3d8 = $(`<div id="html_306618246688cec5fc7b0e41971fc3d8" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Córrego Barra do Frade</p><p>Rodovia: BR-101/ES km 406,5</p></div></div>`)[0];
+                popup_b99ab93ee3bd023323eeb72589eab8f6.setContent(html_306618246688cec5fc7b0e41971fc3d8);
+            
+        
+
+        marker_2df06c1b2615cb004ddddd92c9501c69.bindPopup(popup_b99ab93ee3bd023323eeb72589eab8f6)
+        ;
+
+        
+    
+    
+            marker_2df06c1b2615cb004ddddd92c9501c69.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00b353c3eadad477966fc51e9ab2f2ce = L.marker(
+                [-20.226283333333335, -40.36335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_1a974d531f6b63d5c74295bfee5de6f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_00b353c3eadad477966fc51e9ab2f2ce.setIcon(icon_1a974d531f6b63d5c74295bfee5de6f1);
+        
+    
+        var popup_c5ef01830c441e9e6c09a7a7c6ea5e1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe5413a385e06b80fdb072107369e6f8 = $(`<div id="html_fe5413a385e06b80fdb072107369e6f8" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Santa Maria (LE)</p><p>Rodovia: BR-101/ES km 278,91</p></div></div>`)[0];
+                popup_c5ef01830c441e9e6c09a7a7c6ea5e1a.setContent(html_fe5413a385e06b80fdb072107369e6f8);
+            
+        
+
+        marker_00b353c3eadad477966fc51e9ab2f2ce.bindPopup(popup_c5ef01830c441e9e6c09a7a7c6ea5e1a)
+        ;
+
+        
+    
+    
+            marker_00b353c3eadad477966fc51e9ab2f2ce.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_851645ccf8da1771dffb8e0d1cb14f42 = L.marker(
+                [-20.229833333333332, -40.366883333333334],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_c84e4f25b795eda1fc62efc673e791e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_851645ccf8da1771dffb8e0d1cb14f42.setIcon(icon_c84e4f25b795eda1fc62efc673e791e0);
+        
+    
+        var popup_69952d2ad6df01ddb42cc7328bf0609d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e5826b20074f7db0b8b37acb752c396 = $(`<div id="html_1e5826b20074f7db0b8b37acb752c396" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto E.F.V.M. Santa Maria (LE)</p><p>Rodovia: BR-101/ES km 278,87</p></div></div>`)[0];
+                popup_69952d2ad6df01ddb42cc7328bf0609d.setContent(html_1e5826b20074f7db0b8b37acb752c396);
+            
+        
+
+        marker_851645ccf8da1771dffb8e0d1cb14f42.bindPopup(popup_69952d2ad6df01ddb42cc7328bf0609d)
+        ;
+
+        
+    
+    
+            marker_851645ccf8da1771dffb8e0d1cb14f42.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13c12b60d59a5b15800e0b42086fb601 = L.marker(
+                [-18.31126666666667, -39.95523333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_49b049724c34077cf866f90a3a6da7a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_13c12b60d59a5b15800e0b42086fb601.setIcon(icon_49b049724c34077cf866f90a3a6da7a8);
+        
+    
+        var popup_f9bfba095cf1bd08e7d4cab59c272be1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ab6da2f7884b4fe44d04cd2a35ec383 = $(`<div id="html_3ab6da2f7884b4fe44d04cd2a35ec383" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Itauna</p><p>Rodovia: BR-101/ES km 17,8</p></div></div>`)[0];
+                popup_f9bfba095cf1bd08e7d4cab59c272be1.setContent(html_3ab6da2f7884b4fe44d04cd2a35ec383);
+            
+        
+
+        marker_13c12b60d59a5b15800e0b42086fb601.bindPopup(popup_f9bfba095cf1bd08e7d4cab59c272be1)
+        ;
+
+        
+    
+    
+            marker_13c12b60d59a5b15800e0b42086fb601.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab0ee7e68fc23f272e541559b61c8160 = L.marker(
+                [-20.233016666666668, -40.275533333333335],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_20b881fbb66e901848ffc9017c16b337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ab0ee7e68fc23f272e541559b61c8160.setIcon(icon_20b881fbb66e901848ffc9017c16b337);
+        
+    
+        var popup_1f6024da2f1377080ecfaaddb310fbe8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1d8fe93d7f4cff40a9c818dc03ce86a = $(`<div id="html_f1d8fe93d7f4cff40a9c818dc03ce86a" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto de Interseção a Carapina</p><p>Rodovia: BR-101/ES km 268</p></div></div>`)[0];
+                popup_1f6024da2f1377080ecfaaddb310fbe8.setContent(html_f1d8fe93d7f4cff40a9c818dc03ce86a);
+            
+        
+
+        marker_ab0ee7e68fc23f272e541559b61c8160.bindPopup(popup_1f6024da2f1377080ecfaaddb310fbe8)
+        ;
+
+        
+    
+    
+            marker_ab0ee7e68fc23f272e541559b61c8160.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6400caa3057ab622895a075861c8a3ff = L.marker(
+                [-20.213483333333333, -40.32175],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_de57321606428417485ab0535911d5c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6400caa3057ab622895a075861c8a3ff.setIcon(icon_de57321606428417485ab0535911d5c7);
+        
+    
+        var popup_9f777a2d10d0484d3882fe9af472b0ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36884989381e60484e14ba67553f2279 = $(`<div id="html_36884989381e60484e14ba67553f2279" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio dos Escravos (LE)</p><p>Rodovia: BR-101/ES km 274,15</p></div></div>`)[0];
+                popup_9f777a2d10d0484d3882fe9af472b0ac.setContent(html_36884989381e60484e14ba67553f2279);
+            
+        
+
+        marker_6400caa3057ab622895a075861c8a3ff.bindPopup(popup_9f777a2d10d0484d3882fe9af472b0ac)
+        ;
+
+        
+    
+    
+            marker_6400caa3057ab622895a075861c8a3ff.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed9aa0f9bfdbe168483ce47045a3b1a4 = L.marker(
+                [-20.753283333333332, -41.18723333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_11f3fc54d452d875673cb309f471594b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ed9aa0f9bfdbe168483ce47045a3b1a4.setIcon(icon_11f3fc54d452d875673cb309f471594b);
+        
+    
+        var popup_4389aab5b652fafd8aad31bce0bd8f6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c8a2acbf0759d5ad5c1a45d052a4775 = $(`<div id="html_2c8a2acbf0759d5ad5c1a45d052a4775" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto BR-482 com ES-167</p><p>Rodovia: BR-482/ES km 32,57</p></div></div>`)[0];
+                popup_4389aab5b652fafd8aad31bce0bd8f6a.setContent(html_2c8a2acbf0759d5ad5c1a45d052a4775);
+            
+        
+
+        marker_ed9aa0f9bfdbe168483ce47045a3b1a4.bindPopup(popup_4389aab5b652fafd8aad31bce0bd8f6a)
+        ;
+
+        
+    
+    
+            marker_ed9aa0f9bfdbe168483ce47045a3b1a4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de451bde183bb92b438d877536ee7d10 = L.marker(
+                [-19.161233333333332, -54.75986666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_50d779445c2eeba0239ccdc2a175891d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_de451bde183bb92b438d877536ee7d10.setIcon(icon_50d779445c2eeba0239ccdc2a175891d);
+        
+    
+        var popup_1809d667ba6ef10fc6d82658c5da3bc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df6f8b51777eb52d32ba3e15e2a986ea = $(`<div id="html_df6f8b51777eb52d32ba3e15e2a986ea" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Córrego Matadeira</p><p>Rodovia: BR-163/MS km 650,7</p></div></div>`)[0];
+                popup_1809d667ba6ef10fc6d82658c5da3bc9.setContent(html_df6f8b51777eb52d32ba3e15e2a986ea);
+            
+        
+
+        marker_de451bde183bb92b438d877536ee7d10.bindPopup(popup_1809d667ba6ef10fc6d82658c5da3bc9)
+        ;
+
+        
+    
+    
+            marker_de451bde183bb92b438d877536ee7d10.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_523e4157446bc9762ffd393f8475914a = L.marker(
+                [-23.022683333333333, -54.29781666666667],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_4f36240836c8167f5c2732bdad0d4471 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_523e4157446bc9762ffd393f8475914a.setIcon(icon_4f36240836c8167f5c2732bdad0d4471);
+        
+    
+        var popup_222a6a21b15cf88754c870c89e1efcfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bca04e3f7d932e5d681820c329d966a = $(`<div id="html_6bca04e3f7d932e5d681820c329d966a" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Jejuí</p><p>Rodovia: BR-163/MS km 134,2</p></div></div>`)[0];
+                popup_222a6a21b15cf88754c870c89e1efcfb.setContent(html_6bca04e3f7d932e5d681820c329d966a);
+            
+        
+
+        marker_523e4157446bc9762ffd393f8475914a.bindPopup(popup_222a6a21b15cf88754c870c89e1efcfb)
+        ;
+
+        
+    
+    
+            marker_523e4157446bc9762ffd393f8475914a.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ac147b97369b4980544b2dfa028d71b = L.marker(
+                [-17.51975, -54.73988333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_ece6aeb185ff745a1757f6664ad0a360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4ac147b97369b4980544b2dfa028d71b.setIcon(icon_ece6aeb185ff745a1757f6664ad0a360);
+        
+    
+        var popup_2c1cb487985ab7b7c58f6745d83b9e07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76b1f3a76e9c16a26f7d224d9a391468 = $(`<div id="html_76b1f3a76e9c16a26f7d224d9a391468" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Correntes</p><p>Rodovia: BR-163/MS km 847,1</p></div></div>`)[0];
+                popup_2c1cb487985ab7b7c58f6745d83b9e07.setContent(html_76b1f3a76e9c16a26f7d224d9a391468);
+            
+        
+
+        marker_4ac147b97369b4980544b2dfa028d71b.bindPopup(popup_2c1cb487985ab7b7c58f6745d83b9e07)
+        ;
+
+        
+    
+    
+            marker_4ac147b97369b4980544b2dfa028d71b.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e463fa8165dfc8bc1e40d6e7e70b765c = L.marker(
+                [-9.427216666666666, -36.6347],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_53d0e519995f91a10b320f80bc17d371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e463fa8165dfc8bc1e40d6e7e70b765c.setIcon(icon_53d0e519995f91a10b320f80bc17d371);
+        
+    
+        var popup_74d1d0a819c4f36a16b484bc81daab39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_145cbe1bcc168311b1a164893e2374b8 = $(`<div id="html_145cbe1bcc168311b1a164893e2374b8" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Viaduto sobre Ferrovia e AL-115</p><p>Rodovia: BR-316/AL km 154,79</p></div></div>`)[0];
+                popup_74d1d0a819c4f36a16b484bc81daab39.setContent(html_145cbe1bcc168311b1a164893e2374b8);
+            
+        
+
+        marker_e463fa8165dfc8bc1e40d6e7e70b765c.bindPopup(popup_74d1d0a819c4f36a16b484bc81daab39)
+        ;
+
+        
+    
+    
+            marker_e463fa8165dfc8bc1e40d6e7e70b765c.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1908496103bc854e65aa69a000c25431 = L.marker(
+                [-10.9225, -37.17443333333333],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_c185b2a9c829d89def2e33cac5bf0b93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1908496103bc854e65aa69a000c25431.setIcon(icon_c185b2a9c829d89def2e33cac5bf0b93);
+        
+    
+        var popup_2aca1dfae7041b538beb70ebad30e7ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_020afcd10c2c15b317f2f5655366bd81 = $(`<div id="html_020afcd10c2c15b317f2f5655366bd81" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Rio Poxim Açu (LD)</p><p>Rodovia: BR-101/SE km 96,94</p></div></div>`)[0];
+                popup_2aca1dfae7041b538beb70ebad30e7ff.setContent(html_020afcd10c2c15b317f2f5655366bd81);
+            
+        
+
+        marker_1908496103bc854e65aa69a000c25431.bindPopup(popup_2aca1dfae7041b538beb70ebad30e7ff)
+        ;
+
+        
+    
+    
+            marker_1908496103bc854e65aa69a000c25431.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7910943a88c389c5ae82bbeae4851af = L.marker(
+                [-10.4964, -48.3517],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var icon_e9b31c33bbaab8e51e3e5a1c25644f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bridge", "iconColor": "#fefefe", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e7910943a88c389c5ae82bbeae4851af.setIcon(icon_e9b31c33bbaab8e51e3e5a1c25644f3f);
+        
+    
+        var popup_9e73bbdb013cacd35e120a0fcf8f2cee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11a16680fb5d48468837f68605e1b29d = $(`<div id="html_11a16680fb5d48468837f68605e1b29d" style="width: 100.0%; height: 100.0%;"><div style='text-align:center;'><p>Ponte sobre o Córrego Xupê</p><p>Rodovia: BR-010/TO km 392</p></div></div>`)[0];
+                popup_9e73bbdb013cacd35e120a0fcf8f2cee.setContent(html_11a16680fb5d48468837f68605e1b29d);
+            
+        
+
+        marker_e7910943a88c389c5ae82bbeae4851af.bindPopup(popup_9e73bbdb013cacd35e120a0fcf8f2cee)
+        ;
+
+        
+    
+    
+            marker_e7910943a88c389c5ae82bbeae4851af.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37dc477a37a8e5d60952771d90d3b938 = L.marker(
+                [-25.0, -47.0],
+                {}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+        
+    
+            var div_icon_62037e78a2f814bb4d82f58f17cfc94a = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"position: absolute;\n                 top: 0px; left: 0px; width: 600px;\n                 background-color:peachpuff; border:2px solid grey; z-index:9999; font-size:14px;\n                 padding: 10px;\"\u003e\n        \u003cdiv style=\"font-size:16px; text-align: center;font-weight: bold; font-style: italic; color: darkred; text-decoration: underline;\"\u003e\n            \u003cimg src=\"https://github.com/user-attachments/assets/735a7b7f-5cb6-4a1e-9713-f1a440c363c8\" style=\"width:200px;height:68px;\"\u003e\u003cbr\u003e\n            \u003cp\u003ePontes em condi\u00e7\u00e3o de estabilidade prec\u00e1ria em 2024\u003c/p\u003e\u003cbr\u003e\n        \u003c/div\u003e\n        \u003cimg src=\"https://github.com/fgm12345/Logo_SPPEA/assets/166504202/638f4799-ebdc-47db-a65b-640046c77b9e\" style=\"width:310px;height:57px;\"\u003e\u003cbr\u003e\n    \u003c/div\u003e\n"});
+            marker_37dc477a37a8e5d60952771d90d3b938.setIcon(div_icon_62037e78a2f814bb4d82f58f17cfc94a);
+        
+    
+            var layer_control_519357d3e78dd8f985691634cf9b6c46_layers = {
+                base_layers : {
+                    "Imagem de Sat\u00e9lite" : tile_layer_7900f32a905e43a1f9749b270d42eb40,
+                    "Mapa" : tile_layer_3ef78893c58c56cdff0a12079f8a5e8b,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_519357d3e78dd8f985691634cf9b6c46 = L.control.layers(
+                layer_control_519357d3e78dd8f985691634cf9b6c46_layers.base_layers,
+                layer_control_519357d3e78dd8f985691634cf9b6c46_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_6b9eecfda392bc46ff8d369a925f698e);
+
+        
+</script>
+</html>

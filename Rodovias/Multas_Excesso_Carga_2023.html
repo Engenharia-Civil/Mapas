@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa48d5d1f1e79efb9c7de45199feca9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa48d5d1f1e79efb9c7de45199feca9f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa48d5d1f1e79efb9c7de45199feca9f = L.map(
+                "map_fa48d5d1f1e79efb9c7de45199feca9f",
+                {
+                    center: [-27.0, -40.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_153a2b26ee885829ac535cabf2f6d969 = L.tileLayer(
+                "http://{s}.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "google", "detectRetina": false, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            );
+        
+    
+            tile_layer_153a2b26ee885829ac535cabf2f6d969.addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var tile_layer_8706d4fceb4dd95222e3428e7cec1a52 = L.tileLayer(
+                "http://{s}.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "google", "detectRetina": false, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+            );
+        
+    
+            tile_layer_8706d4fceb4dd95222e3428e7cec1a52.addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var marker_b4d7a182ceab7163a7cfd11a843b3e82 = L.marker(
+                [-16.4170858674384, -54.70655266488808],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_373a99ab65738e02dfd723beb7d9cabc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_b4d7a182ceab7163a7cfd11a843b3e82.setIcon(icon_373a99ab65738e02dfd723beb7d9cabc);
+        
+    
+        var popup_0494ce92dad35daa345f64500e755b79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55d7214d9fc4005bcf4b9a1620d03064 = $(`<div id="html_55d7214d9fc4005bcf4b9a1620d03064" style="width: 100.0%; height: 100.0%;">667 infrações por excesso de peso no posto da PRF em RONDONOPOLIS/MT (km 211 da rodovia BR-364)</div>`)[0];
+                popup_0494ce92dad35daa345f64500e755b79.setContent(html_55d7214d9fc4005bcf4b9a1620d03064);
+            
+        
+
+        marker_b4d7a182ceab7163a7cfd11a843b3e82.bindPopup(popup_0494ce92dad35daa345f64500e755b79)
+        ;
+
+        
+    
+    
+            marker_b4d7a182ceab7163a7cfd11a843b3e82.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcf7a983dd95ba42b729c4b1f5504ff4 = L.marker(
+                [-12.83298426870594, -60.0745306357169],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_929f045d80901d04f7289bec28a73012 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_dcf7a983dd95ba42b729c4b1f5504ff4.setIcon(icon_929f045d80901d04f7289bec28a73012);
+        
+    
+        var popup_a0ed70ecf82c29c4fd5b1ea65fcf9768 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79185fb8cea293921042540f5cf01935 = $(`<div id="html_79185fb8cea293921042540f5cf01935" style="width: 100.0%; height: 100.0%;">454 infrações por excesso de peso no posto da PRF em VILHENA/RO (km 1 da rodovia BR-364)</div>`)[0];
+                popup_a0ed70ecf82c29c4fd5b1ea65fcf9768.setContent(html_79185fb8cea293921042540f5cf01935);
+            
+        
+
+        marker_dcf7a983dd95ba42b729c4b1f5504ff4.bindPopup(popup_a0ed70ecf82c29c4fd5b1ea65fcf9768)
+        ;
+
+        
+    
+    
+            marker_dcf7a983dd95ba42b729c4b1f5504ff4.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5fd4d1394aab1ea71bfdcadc1db6789 = L.marker(
+                [-12.467199635329086, -41.743812347151405],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_0ea7fdcfacdfec2a13f17d396f60d131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_b5fd4d1394aab1ea71bfdcadc1db6789.setIcon(icon_0ea7fdcfacdfec2a13f17d396f60d131);
+        
+    
+        var popup_8ae1657ab289938093cbf47f6fa9ca8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45e7fa02b1d9cde03c1f0a3ef98cfd53 = $(`<div id="html_45e7fa02b1d9cde03c1f0a3ef98cfd53" style="width: 100.0%; height: 100.0%;">342 infrações por excesso de peso no posto da PRF em SEABRA/BA (km 408 da rodovia BR-242)</div>`)[0];
+                popup_8ae1657ab289938093cbf47f6fa9ca8a.setContent(html_45e7fa02b1d9cde03c1f0a3ef98cfd53);
+            
+        
+
+        marker_b5fd4d1394aab1ea71bfdcadc1db6789.bindPopup(popup_8ae1657ab289938093cbf47f6fa9ca8a)
+        ;
+
+        
+    
+    
+            marker_b5fd4d1394aab1ea71bfdcadc1db6789.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26007b85a2233321ba7925fb7351d4eb = L.marker(
+                [-25.213344503921387, -50.06042039950364],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_a981b68ac676b1f95e5ab0cf75b36d88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_26007b85a2233321ba7925fb7351d4eb.setIcon(icon_a981b68ac676b1f95e5ab0cf75b36d88);
+        
+    
+        var popup_bc421d58ea78caaf20c9bb461647e870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696eb607a09c67a6be6bee52fa622e9e = $(`<div id="html_696eb607a09c67a6be6bee52fa622e9e" style="width: 100.0%; height: 100.0%;">332 infrações por excesso de peso no posto da PRF em PONTA GROSSA/PR (km 509 da rodovia BR-376)</div>`)[0];
+                popup_bc421d58ea78caaf20c9bb461647e870.setContent(html_696eb607a09c67a6be6bee52fa622e9e);
+            
+        
+
+        marker_26007b85a2233321ba7925fb7351d4eb.bindPopup(popup_bc421d58ea78caaf20c9bb461647e870)
+        ;
+
+        
+    
+    
+            marker_26007b85a2233321ba7925fb7351d4eb.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_806eb1865858546cd3f07287db12fbcc = L.marker(
+                [-7.732390488708295, -34.94124538495446],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_2d3d41ab288c9c47063124679ffa6463 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_806eb1865858546cd3f07287db12fbcc.setIcon(icon_2d3d41ab288c9c47063124679ffa6463);
+        
+    
+        var popup_de386b52f944fecb833ef66c0003cd32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80604b16c71a3a8a68d0a509bf715cd0 = $(`<div id="html_80604b16c71a3a8a68d0a509bf715cd0" style="width: 100.0%; height: 100.0%;">282 infrações por excesso de peso no posto da PRF em IGARASSU/PE (km 36 da rodovia BR-101)</div>`)[0];
+                popup_de386b52f944fecb833ef66c0003cd32.setContent(html_80604b16c71a3a8a68d0a509bf715cd0);
+            
+        
+
+        marker_806eb1865858546cd3f07287db12fbcc.bindPopup(popup_de386b52f944fecb833ef66c0003cd32)
+        ;
+
+        
+    
+    
+            marker_806eb1865858546cd3f07287db12fbcc.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_639a50c766ebf7c55e444587428688f8 = L.marker(
+                [-17.558913669882056, -39.72609331193936],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_e68650b6c0af7327f4a0035aed964d48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_639a50c766ebf7c55e444587428688f8.setIcon(icon_e68650b6c0af7327f4a0035aed964d48);
+        
+    
+        var popup_35a6a9bb2d45364043ab491bdf6d4e51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a803e37ecf2f0b5c9c513bdbf144f19 = $(`<div id="html_0a803e37ecf2f0b5c9c513bdbf144f19" style="width: 100.0%; height: 100.0%;">272 infrações por excesso de peso no posto da PRF em TEIXEIRA DE FREITAS/BA (km 880 da rodovia BR-101)</div>`)[0];
+                popup_35a6a9bb2d45364043ab491bdf6d4e51.setContent(html_0a803e37ecf2f0b5c9c513bdbf144f19);
+            
+        
+
+        marker_639a50c766ebf7c55e444587428688f8.bindPopup(popup_35a6a9bb2d45364043ab491bdf6d4e51)
+        ;
+
+        
+    
+    
+            marker_639a50c766ebf7c55e444587428688f8.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5b528d04b8f07ea408fcb339ca2f7cd = L.marker(
+                [-15.818570550179144, -55.33272886411614],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_ab5ce6d1dfd4383ee1b5d12f12aa49b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d5b528d04b8f07ea408fcb339ca2f7cd.setIcon(icon_ab5ce6d1dfd4383ee1b5d12f12aa49b9);
+        
+    
+        var popup_dda2123d4b58614f719f037a7fc84d73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebe377b1b6fb25a0f29326ee3abdb2c0 = $(`<div id="html_ebe377b1b6fb25a0f29326ee3abdb2c0" style="width: 100.0%; height: 100.0%;">268 infrações por excesso de peso no posto da PRF em CAMPO VERDE/MT (km 319 da rodovia BR-364)</div>`)[0];
+                popup_dda2123d4b58614f719f037a7fc84d73.setContent(html_ebe377b1b6fb25a0f29326ee3abdb2c0);
+            
+        
+
+        marker_d5b528d04b8f07ea408fcb339ca2f7cd.bindPopup(popup_dda2123d4b58614f719f037a7fc84d73)
+        ;
+
+        
+    
+    
+            marker_d5b528d04b8f07ea408fcb339ca2f7cd.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae86fcfc34073d2c9a176fc6e16cc679 = L.marker(
+                [-6.7641401921433095, -35.13373814861428],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_33bc2c076cd2c1a17f125f0ca20fcd25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae86fcfc34073d2c9a176fc6e16cc679.setIcon(icon_33bc2c076cd2c1a17f125f0ca20fcd25);
+        
+    
+        var popup_54906527dc43a3901bd218090fa2a450 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa9d5693a3fd7357c25f17458e67264a = $(`<div id="html_aa9d5693a3fd7357c25f17458e67264a" style="width: 100.0%; height: 100.0%;">246 infrações por excesso de peso no posto da PRF em RIO TINTO/PB (km 31 da rodovia BR-101)</div>`)[0];
+                popup_54906527dc43a3901bd218090fa2a450.setContent(html_aa9d5693a3fd7357c25f17458e67264a);
+            
+        
+
+        marker_ae86fcfc34073d2c9a176fc6e16cc679.bindPopup(popup_54906527dc43a3901bd218090fa2a450)
+        ;
+
+        
+    
+    
+            marker_ae86fcfc34073d2c9a176fc6e16cc679.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0034f94f8043d3bee62ecae173962b3a = L.marker(
+                [-28.492633467955137, -50.91108200356375],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_ebd8c2ee38eeea3ff4ea40a9fd11c291 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0034f94f8043d3bee62ecae173962b3a.setIcon(icon_ebd8c2ee38eeea3ff4ea40a9fd11c291);
+        
+    
+        var popup_286b84b7320b7ee343505d0fe82c2011 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baa4aad6375cc0e331ea95bf5648b01b = $(`<div id="html_baa4aad6375cc0e331ea95bf5648b01b" style="width: 100.0%; height: 100.0%;">221 infrações por excesso de peso no posto da PRF em VACARIA/RS (km 36 da rodovia BR-116)</div>`)[0];
+                popup_286b84b7320b7ee343505d0fe82c2011.setContent(html_baa4aad6375cc0e331ea95bf5648b01b);
+            
+        
+
+        marker_0034f94f8043d3bee62ecae173962b3a.bindPopup(popup_286b84b7320b7ee343505d0fe82c2011)
+        ;
+
+        
+    
+    
+            marker_0034f94f8043d3bee62ecae173962b3a.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05387907edb5b61fb33535faced41e48 = L.marker(
+                [-7.01405434908432, -41.58748913727904],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var icon_ae5be2f33fbb7d7d3598b607f7821844 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck-moving", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_05387907edb5b61fb33535faced41e48.setIcon(icon_ae5be2f33fbb7d7d3598b607f7821844);
+        
+    
+        var popup_0352cb5bf479572f695271a9c100d811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a216e8a7b01baff68aee83a7de20cdf = $(`<div id="html_4a216e8a7b01baff68aee83a7de20cdf" style="width: 100.0%; height: 100.0%;">218 infrações por excesso de peso no posto da PRF em PICOS/PI (km 294 da rodovia BR-316)</div>`)[0];
+                popup_0352cb5bf479572f695271a9c100d811.setContent(html_4a216e8a7b01baff68aee83a7de20cdf);
+            
+        
+
+        marker_05387907edb5b61fb33535faced41e48.bindPopup(popup_0352cb5bf479572f695271a9c100d811)
+        ;
+
+        
+    
+    
+            marker_05387907edb5b61fb33535faced41e48.bindTooltip(
+                `<div>
+                     Clique para mais informações
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_846f39fe90f7a46ed508f024e03dfa8c = L.marker(
+                [-25.0, -47.0],
+                {}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+        
+    
+            var div_icon_8ceaedd06db55836d22fa0155125f06a = L.divIcon({"className": "empty", "html": "\n    \u003cdiv style=\"position: absolute;\n                 top: 0px; left: 0px; width: 400px;\n                 background-color:peachpuff; border:2px solid grey; z-index:9999; font-size:14px;\n                 padding: 10px;\"\u003e\n        \u003cdiv style=\"font-size:16px; text-align: center;font-weight: bold; font-style: italic; color: darkred; text-decoration: underline;\"\u003e\n            \u003cimg src=\"https://github.com/user-attachments/assets/364e0ae2-d63b-4516-8647-92ec8cdecdd0\" style=\"width:80px;height:100px;\"\u003e\u003cbr\u003e\n            \u003cp\u003e10 locais com mais multas por excesso de carga em 2023\u003c/p\u003e\u003cbr\u003e\n        \u003c/div\u003e\n        \u003cstrong\u003eLEGENDA:\u003c/strong\u003e\u003cbr\u003e\n        \u003ci class=\"fa fa-location-pin\" style=\"color:#000000\"\u003e\u003c/i\u003e - Local com mais de 350 multas por excesso de carga\u003cbr\u003e\n        \u003ci class=\"fa fa-location-pin\" style=\"color:#ac1c00\"\u003e\u003c/i\u003e - Local com mais de 300 e menos de 350 multas por excesso de carga\u003cbr\u003e\n        \u003ci class=\"fa fa-location-pin\" style=\"color:#ff2a00\"\u003e\u003c/i\u003e - Local com mais de 250 e menos de 300 multas por excesso de carga\u003cbr\u003e\n        \u003ci class=\"fa fa-location-pin\" style=\"color:#ff9e00\"\u003e\u003c/i\u003e - Local com menos de 250 multas por excesso de carga\u003cbr\u003e\n        \u003cimg src=\"https://github.com/fgm12345/Logo_SPPEA/assets/166504202/638f4799-ebdc-47db-a65b-640046c77b9e\" style=\"width:310px;height:57px;\"\u003e\u003cbr\u003e\n    \u003c/div\u003e\n"});
+            marker_846f39fe90f7a46ed508f024e03dfa8c.setIcon(div_icon_8ceaedd06db55836d22fa0155125f06a);
+        
+    
+            var layer_control_8f742045dd5acd0ea3da4ac8e9ec92ee_layers = {
+                base_layers : {
+                    "Imagem de Sat\u00e9lite" : tile_layer_153a2b26ee885829ac535cabf2f6d969,
+                    "Mapa" : tile_layer_8706d4fceb4dd95222e3428e7cec1a52,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_8f742045dd5acd0ea3da4ac8e9ec92ee = L.control.layers(
+                layer_control_8f742045dd5acd0ea3da4ac8e9ec92ee_layers.base_layers,
+                layer_control_8f742045dd5acd0ea3da4ac8e9ec92ee_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_fa48d5d1f1e79efb9c7de45199feca9f);
+
+        
+</script>
+</html>
